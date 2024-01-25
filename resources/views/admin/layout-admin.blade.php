@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 </head>
 <body class="g-sidenav-show bg-gray-100">
-    @include('name')
+    @include('admin.components.sidenav')
+    @yield('dashboard')
 </body>
 </html>
