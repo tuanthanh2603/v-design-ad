@@ -1,4 +1,4 @@
 @extends('admin.layout-admin')
 @section('dashboard')
-<h1>f</h1>
+<h1>sp</h1>
 @endsection
