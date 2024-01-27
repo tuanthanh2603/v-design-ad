@@ -22,7 +22,6 @@ Route::get('/admin', function(){
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'showLogin']);
     Route::get('/dashboard', [AdminController::class, 'showDashboard']);
-    Route::get('/dich-vu', [AdminController::class, 'showService']);
     Route::get('/san-pham', [AdminController::class, 'showProduct']);
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);
     Route::get('/khach-hang', [AdminController::class, 'showCustomer']);
