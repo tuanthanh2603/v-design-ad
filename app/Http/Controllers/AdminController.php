@@ -27,4 +27,7 @@ class AdminController extends Controller
     public function showCategory(){
         return view('admin.pages.danh-muc');
     }
+    public function showNews(){
+        return view('admin.pages.tin-tuc');
+    }
 }

@@ -33,4 +33,5 @@ Route::prefix('admin')->group(function () {
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);
     Route::get('/khach-hang', [AdminController::class, 'showCustomer']);
     Route::get('/danh-muc', [AdminController::class, 'showCategory']);
+    Route::get('/tin-tuc', [AdminController::class, 'showNews']);
 });
