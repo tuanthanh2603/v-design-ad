@@ -43,10 +43,8 @@
                                 @endforeach
                             </div>
                             <div class="flex_box al_center btn_view_more view_more">
-                                <span class="fs_14 lh_24 fw500">
-                                    Xem thêm hình ảnh dự án </span>
-                                <span class="fs_14 lh_24 fw500">
-                                    Thu gọn </span>
+                                <span class="fs_14 lh_24 fw500">Xem thêm hình ảnh</span>
+                                <span class="fs_14 lh_24 fw500">Thu gọn</span>
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.9375 4.125L5.5 7.5625L2.0625 4.125" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
