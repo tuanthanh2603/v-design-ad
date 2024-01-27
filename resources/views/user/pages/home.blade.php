@@ -1,4 +1,8 @@
 @extends('user.layouts.master')
+@php
+    $showLoading = true;
+@endphp
+@section('bodyClass', 'home page-template page-template-templates page-template-home page-template-templateshome-php page page-id-316 wp-custom-logo wp-embed-responsive right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover featured-image-active')
 @section('content')
 <section class="section home_banner">
     <div class="swiper home_swiper">

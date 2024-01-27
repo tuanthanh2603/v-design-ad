@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
+Route::get('/dich-vu/{serviceSlug}', [ServiceController::class, 'showBySlug']);
+Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategorySlug']);
+Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
 Route::get('/admin', function(){
     return view('login');
 });

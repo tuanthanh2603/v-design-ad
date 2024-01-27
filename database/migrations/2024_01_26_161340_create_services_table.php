@@ -20,7 +20,6 @@ class CreateServicesTable extends Migration
             $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->string('image')->nullable();
-            $table->string('weight')->nullable(); // trọng lượng
             $table->string('materials')->nullable(); // chất liệu
             $table->string('size')->nullable(); // kích thước
             $table->string('shipping')->nullable(); // vận chuyển

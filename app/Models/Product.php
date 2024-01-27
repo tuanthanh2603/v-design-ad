@@ -16,6 +16,7 @@ class Product extends Model
         'slug',
         'description',
         'image',
+        'weight', // trọng lượng
         'materials', // chất liệu
         'size', // kích thước
         'shipping', // vận chuyển
