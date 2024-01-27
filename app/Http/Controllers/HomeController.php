@@ -29,4 +29,19 @@ class HomeController extends Controller
             'services' => $services,
         ]);
     }
+    public function showContact(){
+        return view('user.pages.contact', [
+            'title' => 'Liên hệ'
+        ]);
+    }
+    public function showIntroduce(){
+        return  view('user.pages.introduce', [
+            'title' => 'Giới thiệu'
+        ]);
+    }
+    public function showNews(){
+        return  view('user.pages.news', [
+            'title' => 'Xu hướng thiết kế'
+        ]);
+    }
 }

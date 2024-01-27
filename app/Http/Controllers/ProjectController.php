@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
+    public function showProject(){
+        return view('user.pages.project.index', [
+            'title' => 'Dự án'
+        ]);
+    }
     public function index()
     {
         $categories = Category::orderBy('created_at', 'desc')->take(4)->get();

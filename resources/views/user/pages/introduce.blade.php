@@ -3,7 +3,7 @@
 @section('content')
 <section class="section project_page_1">
     <div class="grid-container">
-        <h1 class="sec_title_2">Sản phẩm của V Design</h1>
+        <h1 class="sec_title_2">Giới thiệu</h1>
     </div>
 </section>
 @endsection

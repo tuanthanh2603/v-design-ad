@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
+    public function showService(){
+        return view('user.pages.service.index2', [
+            'title' => 'Dịch vụ'
+        ]);
+    }
     public function index()
     {
         $categories = Category::orderBy('created_at', 'desc')->take(4)->get();

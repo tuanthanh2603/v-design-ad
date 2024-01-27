@@ -36,6 +36,10 @@ Route::prefix('dich-vu')->group(function() {
 Route::prefix('san-pham')->group(function() {
     Route::get('/', [ProductController::class, 'showProduct']);
 });
+
+Route::get('/lien-he', [HomeController::class, 'showContact']);
+Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
+Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
 Route::get('/admin', function(){
     return view('login');
 });
