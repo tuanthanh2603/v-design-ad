@@ -28,3 +28,4 @@
     <link rel="stylesheet" id="responsive-css" href="/assets/css/responsive.css" media="all" />
     <script src="/assets/js/jquery_3.7.0.min.js" id="jquery-core-js"></script>
     <link rel="icon" href="/assets/images/VDesignAds.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
