@@ -64,9 +64,9 @@ body{
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-body.unscrollable{
+/* body.unscrollable{
     overflow: hidden;
-}
+} */
 .grid-container{
     max-width: 72.917rem;
 }
