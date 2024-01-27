@@ -4,8 +4,8 @@
                 <div class="flex_box al_end jus_between tablet_flex_col">
                     <div class="left_col tablet_col_12">
                         <div class="logo_footer relative">
-                            <a class="wrap_link" href="index.html" target="" title=""></a>
-                            <img width="204" height="38" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20204%2038'%3E%3C/svg%3E" class="d_block" alt="" decoding="async" loading="lazy" data-lazy-src="wp-content/uploads/2023/07/S_logo_white_png-1-1.png" />
+                            <a class="wrap_link" href="/"></a>
+                            <img width="70" height="38" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20204%2038'%3E%3C/svg%3E" class="d_block" alt="" decoding="async" loading="lazy" data-lazy-src="/assets/images/logo-sm.png" />
                         </div>
                         <div class="menu_footer">
                             <ul id="menu-menu-footer" class="m_0 ls_none flex_box al_center tablet_jus_center flex_wrap">
