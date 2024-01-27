@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
 Route::get('/admin', function(){
     return view('login');
 });
