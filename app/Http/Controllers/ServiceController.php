@@ -33,4 +33,18 @@ class ServiceController extends Controller
         }
         return redirect()->route('home');
     }
+
+    public function showByCategorySlug(Request $request, $categorySlug)
+    {
+        $category = Category::where('slug', $categorySlug)->first();
+        if ($category != null) {
+            $services = Service::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(6);
+            return view('user.pages.service.showByCategory', [
+                'title' => 'Dịch vụ ' . $category->name,
+                'categories' => Category::orderBy('created_at', 'desc')->take(4)->get(),
+                'services' => $services,
+            ]);
+        }
+        return redirect()->route('home');
+    }
 }

@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
 Route::get('/dich-vu/{serviceSlug}', [ServiceController::class, 'showBySlug']);
+Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategorySlug']);
 Route::get('/admin', function(){
     return view('login');
 });
