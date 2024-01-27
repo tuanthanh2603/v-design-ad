@@ -13,7 +13,7 @@
     </div>
     <div class="gr_head absolute left_cont">
         <div class="container">
-            <h1>{{ $project->name }}</h1>
+            <h1>{{ $service->name }}</h1>
         </div>
     </div>
 </div>
@@ -55,52 +55,22 @@
             </div>
             <div class="col_4 tablet_col_5 mobile_col_12">
                 <div class="fs_16 lh_22 fw300 text_3">
-                    Thông tin dịch vụ </div>
-                <h2 class="sec_title_3">{{ $project->category->name }}</h2>
+                    Thông tin dự án </div>
+                <h2 class="sec_title_3">{{ $project->category }}</h2>
                 <ul class="ls_none m_0">
                     <li class="flex_box al_center">
                         <span class="fs_14 lh_22 fw400">Hạng mục</span>
                         <strong class="fs_14 lh_22 fw600">{{ $project->category->name }}</strong>
                     </li>
-                    @if($project->materials)
+                    @if($project->address)
                     <li class="flex_box al_center">
                         <span class="fs_14 lh_22 fw400">Địa chỉ</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->materials }}</strong>
-                    </li>
-                    @endif
-                    @if($project->size)
-                    <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Kích thước</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->size }}</strong>
-                    </li>
-                    @endif
-                    @if($project->shipping)
-                    <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Vận chuyển</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->shipping }}</strong>
-                    </li>
-                    @endif
-                    @if($project->setup)
-                    <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Thi công</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->setup }}</strong>
-                    </li>
-                    @endif
-                    @if($project->waranty)
-                    <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Bảo hành</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->waranty }}</strong>
-                    </li>
-                    @endif
-                    @if($project->brand)
-                    <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Brand</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->brand }}</strong>
+                        <strong class="fs_14 lh_22 fw600">{{ $project->address }}</strong>
                     </li>
                     @endif
                 </ul>
                 <div class="box_content">
-                    <div class="fs_16 lh_22 fw600 text_3">Mô tả dịch vụ</div>
+                    <div class="fs_16 lh_22 fw600 text_3">Mô tả dự án</div>
                     <div class="fs_14 lh_24 fw400">
                         <div class="content">
                             <div class="content_inner">
