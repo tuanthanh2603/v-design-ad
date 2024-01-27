@@ -55,26 +55,56 @@
             </div>
             <div class="col_4 tablet_col_5 mobile_col_12">
                 <div class="fs_16 lh_22 fw300 text_3">
-                    Thông tin dự án </div>
-                <h2 class="sec_title_3">{{ $project->category }}</h2>
+                    Thông tin dịch vụ </div>
+                <h2 class="sec_title_3">{{ $service->category->name }}</h2>
                 <ul class="ls_none m_0">
                     <li class="flex_box al_center">
                         <span class="fs_14 lh_22 fw400">Hạng mục</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->category->name }}</strong>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->category->name }}</strong>
                     </li>
-                    @if($project->address)
+                    @if($service->materials)
                     <li class="flex_box al_center">
-                        <span class="fs_14 lh_22 fw400">Địa chỉ</span>
-                        <strong class="fs_14 lh_22 fw600">{{ $project->address }}</strong>
+                        <span class="fs_14 lh_22 fw400">Chất liệu</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->materials }}</strong>
+                    </li>
+                    @endif
+                    @if($service->size)
+                    <li class="flex_box al_center">
+                        <span class="fs_14 lh_22 fw400">Kích thước</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->size }}</strong>
+                    </li>
+                    @endif
+                    @if($service->shipping)
+                    <li class="flex_box al_center">
+                        <span class="fs_14 lh_22 fw400">Vận chuyển</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->shipping }}</strong>
+                    </li>
+                    @endif
+                    @if($service->setup)
+                    <li class="flex_box al_center">
+                        <span class="fs_14 lh_22 fw400">Thi công</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->setup }}</strong>
+                    </li>
+                    @endif
+                    @if($service->waranty)
+                    <li class="flex_box al_center">
+                        <span class="fs_14 lh_22 fw400">Bảo hành</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->waranty }}</strong>
+                    </li>
+                    @endif
+                    @if($service->brand)
+                    <li class="flex_box al_center">
+                        <span class="fs_14 lh_22 fw400">Brand</span>
+                        <strong class="fs_14 lh_22 fw600">{{ $service->brand }}</strong>
                     </li>
                     @endif
                 </ul>
                 <div class="box_content">
-                    <div class="fs_16 lh_22 fw600 text_3">Mô tả dự án</div>
+                    <div class="fs_16 lh_22 fw600 text_3">Mô tả dịch vụ</div>
                     <div class="fs_14 lh_24 fw400">
                         <div class="content">
                             <div class="content_inner">
-                                <p>{{ $project->description }}</p>
+                                <p>{{ $service->description }}</p>
                             </div>
                         </div>
                         <div class="content hide">
@@ -88,14 +118,14 @@
                                         <path d="M7.5 11.25H12.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a class="hover_zoom_img" href="http://twitter.com/share?text={{ $project->name }}&url={{ url()->current() }}" target="_blank">
+                                <a class="hover_zoom_img" href="http://twitter.com/share?text={{ $service->name }}&url={{ url()->current() }}" target="_blank">
                                     <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" class="r-1nao33i r-4qtqp9 r-yyyyoo r-rxcuwo r-1777fci r-m327ed r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr">
                                         <g>
                                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
                                         </g>
                                     </svg>
                                 </a>
-                                <a class="hover_zoom_img" href="https://www.linkedin.com/shareArticle?mini=true&url={{ url()->current() }}&title={{ $project->name }}" target="_blank">
+                                <a class="hover_zoom_img" href="https://www.linkedin.com/shareArticle?mini=true&url={{ url()->current() }}&title={{ $service->name }}" target="_blank">
                                     <svg class="hover_zoom" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M9.375 8.75V13.75" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
