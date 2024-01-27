@@ -37,14 +37,14 @@
                                     <td>
                                         <div class="d-flex px-2 py-1">
                                             <div class="d-flex flex-column justify-content-center">
-                                                <h6 class="mb-0 text-sm">Làm bảng hiệu</h6>
+                                                <h6 class="mb-0 text-sm">Bảng hiệu</h6>
 
                                             </div>
                                         </div>
                                     </td>
                                     
                                     <td class="align-middle text-center text-sm">
-                                        <span class="badge badge-sm bg-gradient-success">Đã xem</span>
+                                        <span class="badge badge-sm bg-gradient-success">Hiện</span>
                                     </td>
                                     <td class="align-middle text-center">
                                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
@@ -59,14 +59,14 @@
                                         <div class="d-flex px-2 py-1">
 
                                             <div class="d-flex flex-column justify-content-center">
-                                                <h6 class="mb-0 text-sm">Làm Hộp Đèn - Đèn LED</h6>
+                                                <h6 class="mb-0 text-sm">Hộp Đèn - Đèn LED</h6>
 
                                             </div>
                                         </div>
                                     </td>
                                 
                                     <td class="align-middle text-center text-sm">
-                                        <span class="badge badge-sm bg-gradient-warning">Chờ xử lý</span>
+                                        <span class="badge badge-sm bg-gradient-warning">Ẩn</span>
                                     </td>
                                     <td class="align-middle text-center">
                                         <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
@@ -83,12 +83,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mt-4">
+        
+    </div>
+    <div class="row">
+        <div class="col-12 mt-4">
             <div class="card mb-4">
                 <div class="card-header pb-0 p-3">
                     <div class="row">
                         <div class="col-6 d-flex align-items-center">
-                            <h6 class="mb-0">sản phẩm</h6>
+                            <h6 class="mb-0">Sản phẩm</h6>
                         </div>
                         <div class="col-6 text-end">
                             <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="fas fa-plus"
@@ -103,6 +106,8 @@
                                 <tr>
                                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Tên sản phẩm</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Hình ảnh</th>
                                     
                                     <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
