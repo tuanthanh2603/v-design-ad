@@ -4,13 +4,15 @@
 <head>
     @include('user.components.header')
 </head>
-<body class="home page-template page-template-templates page-template-home page-template-templateshome-php page page-id-316 wp-custom-logo wp-embed-responsive right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover featured-image-active">
+<body class="@yield('bodyClass')">
     <script>
         jQuery(document).ready(function() {
             jQuery("body").addClass("unscrollable")
         })
     </script>
-    @include('user.components.loading')
+    @if(isset($showLoading) && $showLoading)
+        @include('user.components.loading')
+    @endif
     @include('user.components.navbar')
     <div class="site grid-container container hfeed" id="page">
         <div class="site-content" id="content">
