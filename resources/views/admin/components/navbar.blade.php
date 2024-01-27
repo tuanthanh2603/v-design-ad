@@ -12,6 +12,8 @@
                 <h6 class="font-weight-bolder mb-0 mt-2">Sản phẩm</h6>
             @elseif(request()->is('admin/tai-khoan'))
                 <h6 class="font-weight-bolder mb-0 mt-2">Tài khoản</h6>
+            @elseif(request()->is('admin/danh-muc'))
+                <h6 class="font-weight-bolder mb-0 mt-2">Danh mục</h6>
             @endif
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">

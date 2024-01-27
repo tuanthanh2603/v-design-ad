@@ -12,6 +12,9 @@ class AdminController extends Controller
     public function showDashboard(){
         return view('admin.pages.dashboard');
     }
+    public function showService(){
+        return view('admin.pages.dich-vu');
+    }
     public function showProduct(){
         return view('admin.pages.san-pham');
     }
@@ -20,5 +23,8 @@ class AdminController extends Controller
     }
     public function showCustomer(){
         return view('admin.pages.khach-hang');
+    }
+    public function showCategory(){
+        return view('admin.pages.danh-muc');
     }
 }
