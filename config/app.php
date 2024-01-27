@@ -16,9 +16,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'VDesignAds'),
+    'name' => env('APP_NAME', 'V Design'),
 
-    'description' => env('APP_DESCRIPTION', 'VDesignAds - Thiết kế quảng cáo chuyên nghiệp'),
+    'description' => env('APP_DESCRIPTION', 'V Design - Thiết kế quảng cáo chuyên nghiệp'),
 
     /*
     |--------------------------------------------------------------------------

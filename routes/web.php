@@ -22,6 +22,10 @@ Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
 Route::get('/dich-vu/{serviceSlug}', [ServiceController::class, 'showBySlug']);
 Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategorySlug']);
 Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
+
+// Dự án
+// Dịch vụ
+// Sản phẩm
 Route::get('/admin', function(){
     return view('login');
 });

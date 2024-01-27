@@ -403,7 +403,7 @@ body:not(.no-sidebar) .entry-content .alignfull {
     .has-inline-mobile-toggle .inside-header {
         flex-direction: row;
         text-align: left;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     .has-inline-mobile-toggle .header-widget,

@@ -1896,9 +1896,7 @@ section.home_3 .sec_title{
     font-size: 1.198rem;
     line-height: 2.083rem;
 }
-body.page-template-home .site-header .header-image{
-    filter: brightness(0) invert(1);
-}
+
 body.page-template-home header#masthead{
     background: transparent;
     border: none;

@@ -1,8 +1,9 @@
     <header class="site-header has-inline-mobile-toggle" id="masthead">
         <div class="inside-header grid-container">
+            
             <div class="site-logo">
-                <a href="index.html" rel="home">
-                    <img class="header-image is-logo-image" alt="S Architects" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20114%20132'%3E%3C/svg%3E" width="114" height="132" data-lazy-src="https://sarchitects.com.vn/wp-content/uploads/2023/07/Mask-group-1.png" /><noscript><img class="header-image is-logo-image" alt="S Architects" src="wp-content/uploads/2023/07/Mask-group-1.png" width="114" height="132" /></noscript>
+                <a href="{{ url('/') }}" rel="home">
+                    <img class="header-image is-logo-image" alt="S Architects" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20114%20132'%3E%3C/svg%3E" width="114" height="132" data-lazy-src="{{ asset('static/logo-sm.png') }}" /><noscript><img class="header-image is-logo-image" alt="S Architects" src="wp-content/uploads/2023/07/Mask-group-1.png" width="114" height="132" /></noscript>
                 </a>
             </div>
             <nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
@@ -28,10 +29,11 @@
                             </svg></span><span class="mobile-menu">Menu</span> </button>
                     <div id="primary-menu" class="main-nav">
                         <ul id="menu-primary-menu" class=" menu sf-menu">
+                            <li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="ve-s-architects/index.html">Về V Design</a></li>
                             <li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="du-an-s-architects/index.html">Dự án</a></li>
-                            <li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="ve-s-architects/index.html">Về S Architects</a></li>
-                            <li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="tin-tuc-su-kien/index.html">Media</a></li>
-                            <li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Tuyển dụng</a></li>
+                            <li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="tin-tuc-su-kien/index.html">Dịch vụ</a></li>
+                            <li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Sản phẩm</a></li>
+                            <li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Xu hướng thiết kế</a></li>
                             <li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="lien-he-s-architects/index.html">Liên hệ</a></li>
                         </ul>
                     </div>
@@ -46,7 +48,7 @@
         <div class="menu_custom">
             <div class="logo_header relative text_center">
                 <a href="index.html">
-                    <img width="402" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20402%20300'%3E%3C/svg%3E" class="d_block m_auto" alt="" decoding="async" fetchpriority="high" data-lazy-src="https://sarchitects.com.vn/wp-content/uploads/2023/07/S_logo_white_png-2.png" />
+                    <img width="402" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20402%20300'%3E%3C/svg%3E" class="d_block m_auto" alt="" decoding="async" fetchpriority="high" data-lazy-src="{{ asset('static/logo-vdesign.png') }}" />
                     <noscript>
                         <img width="402" height="300" src="wp-content/uploads/2023/07/S_logo_white_png-2.png" class="d_block m_auto" alt="" decoding="async" fetchpriority="high" />
                     </noscript>
@@ -55,10 +57,11 @@
             <div class="main_menu">
                 <div id="primary-menu" class="main-nav">
                     <ul id="menu-primary-menu-1" class="ls_none m_0  menu sf-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="ve-s-architects/index.html">Về V Design</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="du-an-s-architects/index.html">Dự án</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="ve-s-architects/index.html">Về VDesignAds</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="tin-tuc-su-kien/index.html">Media</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Tuyển dụng</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="tin-tuc-su-kien/index.html">Dịch vụ</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Sản phẩm</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="tuyen-dung/index.html">Xu hướng thiết kế</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="lien-he-s-architects/index.html">Liên hệ</a></li>
                     </ul>
                 </div>
