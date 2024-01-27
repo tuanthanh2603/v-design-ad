@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -24,8 +25,17 @@ Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategor
 Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
 
 // Dự án
+Route::prefix('du-an')->group(function() {
+    Route::get('/', [ProjectController::class, 'showProject']);
+});
 // Dịch vụ
+Route::prefix('dich-vu')->group(function() {
+    Route::get('/', [ServiceController::class, 'showService']);
+});
 // Sản phẩm
+Route::prefix('san-pham')->group(function() {
+    Route::get('/', [ProductController::class, 'showProduct']);
+});
 Route::get('/admin', function(){
     return view('login');
 });
