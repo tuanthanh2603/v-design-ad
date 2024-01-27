@@ -25,9 +25,10 @@ Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
 Route::get('/admin', function(){
     return view('login');
 });
-Route::prefix('admin')->group(function () {
-    Route::get('/', [AdminController::class, 'showLogin']);
-    Route::get('/dashboard', [AdminController::class, 'showDashboard']);
+Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLoginForm');
+Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
+Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
+    Route::get('/', [AdminController::class, 'showDashboard']);
     Route::get('/dich-vu', [AdminController::class, 'showService']);
     Route::get('/san-pham', [AdminController::class, 'showProduct']);
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);
