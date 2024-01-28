@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\ImageController;
+use App\Http\Controllers\Admin\ManageCategoryController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -58,6 +60,15 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
     Route::get('/san-pham', [AdminController::class, 'showProduct']);
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);
     Route::get('/khach-hang', [AdminController::class, 'showCustomer']);
-    Route::get('/danh-muc', [AdminController::class, 'showCategory']);
     Route::get('/tin-tuc', [AdminController::class, 'showNews']);
+    Route::prefix('images')->group(function () {
+        Route::post('upload', [ImageController::class, 'upload'])->name('image.upload');
+    });
+    Route::prefix('categories')->group(function () {
+        Route::get('', [ManageCategoryController::class, 'index']);
+        Route::post('/create', [ManageCategoryController::class, 'create'])->name('admin.categories.create');
+        Route::get('/edit/{id}', [ManageCategoryController::class, 'edit'])->name('admin.categories.edit');
+        Route::post('/edit/{id}', [ManageCategoryController::class, 'update']);
+        Route::delete('/destroy', [ManageCategoryController::class, 'destroy'])->name('admin.categories.destroy');
+    });
 });
