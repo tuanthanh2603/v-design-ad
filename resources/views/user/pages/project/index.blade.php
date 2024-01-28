@@ -68,11 +68,11 @@
                 <div class="project_item relative hover_zoom_img">
                 <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-tournesol/" class="wrap_link"></a>
                 <div class="img_wrap">
-                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                    <img width="1920" height="1080" src="{{ asset('uploads/h1.jpg') }}" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="{{ asset('uploads/h1.jpg') }} 1920w, {{ asset('uploads/h1.jpg') }} 300w, {{ asset('uploads/h1.jpg') }} 1024w, {{ asset('uploads/h1.jpg') }} 768w, {{ asset('uploads/h1.jpg') }} 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
                 </div>
                 <div class="cont_wrap absolute ts_04">
                     <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
-                        PHU YEN TOURNESOL
+                        Bảng hiệu TINPHUOC
                     </h3>
                 </div>
             </div>
@@ -80,11 +80,11 @@
             <div class="project_item relative hover_zoom_img">
                 <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-house-3/" class="wrap_link"></a>
                 <div class="img_wrap">
-                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                    <img width="1920" height="1080" src="{{ asset('uploads/h2.jpg') }}" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="{{ asset('uploads/h2.jpg') }} 1920w, {{ asset('uploads/h2.jpg') }} 300w, {{ asset('uploads/h2.jpg') }} 1024w, {{ asset('uploads/h2.jpg') }} 768w, {{ asset('uploads/h2.jpg') }} 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
                 </div>
                 <div class="cont_wrap absolute ts_04">
                     <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
-                        PHU YEN HOUSE 3
+                        Bảng hiệu Nha Khoa Sài Gòn
                     </h3>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="project_item relative hover_zoom_img">
                 <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-house-3/" class="wrap_link"></a>
                 <div class="img_wrap">
-                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                    <img width="1920" height="1080" src="{{ asset('uploads/h3.jpg') }}" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="{{ asset('uploads/h3.jpg') }} 1920w, {{ asset('uploads/h3.jpg') }} 300w, {{ asset('uploads/h3.jpg') }} 1024w, {{ asset('uploads/h3.jpg') }} 768w, {{ asset('uploads/h3.jpg') }} 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
                 </div>
                 <div class="cont_wrap absolute ts_04">
                     <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
