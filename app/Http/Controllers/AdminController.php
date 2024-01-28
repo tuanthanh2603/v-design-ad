@@ -2,12 +2,32 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function showLoginForm(){
         return view('admin.login');
+    }
+
+    public function login(Request $request) {
+        $credentials = $request->only('email', 'password');
+        if (auth()->attempt($credentials)) {
+            return redirect()->route('showDashboard');
+        }
+        return redirect()->back()->withErrors(['login' => 'Tên người dùng hoặc mật khẩu không đúng.'])->withInput();
+    }
+
+    public function register(Request $request)
+    {
+        $data = $request->only('name', 'email', 'password');
+        $data['password'] = bcrypt($data['password']);
+        $user = User::create($data);
+        if ($user) {
+            return redirect()->route('showLoginForm');
+        }
+        return redirect()->back()->with('error', 'Đăng ký không thành công');
     }
 
     public function showRegisterForm(){

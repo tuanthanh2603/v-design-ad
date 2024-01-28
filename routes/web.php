@@ -43,8 +43,10 @@ Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
 
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLoginForm');
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
+Route::post('/login', [AdminController::class, 'login'])->name('login');
+Route::post('/register', [AdminController::class, 'register'])->name('register');
 Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
-    Route::get('/', [AdminController::class, 'showDashboard']);
+    Route::get('/', [AdminController::class, 'showDashboard'])->name('showDashboard');
     Route::get('/dich-vu', [AdminController::class, 'showService']);
     Route::get('/san-pham', [AdminController::class, 'showProduct']);
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);

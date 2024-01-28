@@ -36,16 +36,28 @@
 
                                 </div>
                                 <div class="card-body">
-                                    <form role="form">
-                                        <label>Tên đăng nhập</label>
+                                    <form method="POST" action="{{ route('register') }}">
+                                        @csrf
+                                        <label>Email</label>
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Tên đăng nhập"
-                                                aria-label="Email" aria-describedby="email-addon" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Email"
+                                                autofocus required>
                                         </div>
                                         <label>Mật khẩu</label>
                                         <div class="mb-3">
-                                            <input type="password" class="form-control" placeholder="Mật khẩu"
-                                                aria-label="Password" aria-describedby="password-addon" required>
+                                            <input type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                                                required>
+                                        </div>
+                                        <label>Họ và tên</label>
+                                        <div class="mb-3">
+                                            <input type="text" name="name" class="form-control" placeholder="Họ và tên"
+                                                required>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            @error('register')
+                                                <div class="alert alert-danger text-center" style="color:white">{{ $message }}</div>
+                                            @enderror
                                         </div>
 
                                         <div class="text-center">
@@ -59,7 +71,7 @@
                         <div class="col-md-6">
                             <div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
                                 <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
-                                    style="background-image:url('{{ asset('static/curved6.jpg') }}')"></div>
+                                    style="background-image:url('/static/curved6.jpg')"></div>
                             </div>
                         </div>
                     </div>
