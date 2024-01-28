@@ -96,7 +96,7 @@
                 </div>
                 <div class="cont_wrap absolute ts_04">
                     <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
-                        PHU YEN HOUSE 3
+                        Bảng hiệu Nhà xuất bản Kim Đồng
                     </h3>
                 </div>
             </div>
