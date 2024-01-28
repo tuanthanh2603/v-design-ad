@@ -45,6 +45,7 @@ Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLogin
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
 Route::post('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/register', [AdminController::class, 'register'])->name('register');
+Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
     Route::get('/', [AdminController::class, 'showDashboard'])->name('showDashboard');
     Route::get('/dich-vu', [AdminController::class, 'showService']);
