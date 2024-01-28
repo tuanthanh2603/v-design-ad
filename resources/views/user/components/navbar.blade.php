@@ -1,6 +1,6 @@
     <header class="site-header has-inline-mobile-toggle" id="masthead">
         <div class="inside-header grid-container">
-            
+
             <div class="site-logo">
                 <a href="{{ url('/') }}" rel="home">
                     <img class="header-image is-logo-image" alt="S Architects" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20114%20132'%3E%3C/svg%3E" width="114" height="132" data-lazy-src="{{ asset('static/logo-sm.png') }}" /><noscript><img class="header-image is-logo-image" alt="S Architects" src="wp-content/uploads/2023/07/Mask-group-1.png" width="114" height="132" /></noscript>
@@ -47,7 +47,7 @@
         </div>
         <div class="menu_custom">
             <div class="logo_header relative text_center">
-                <a href="index.html">
+                <a href="{{ url('/') }}">
                     <img width="402" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20402%20300'%3E%3C/svg%3E" class="d_block m_auto" alt="" decoding="async" fetchpriority="high" data-lazy-src="{{ asset('static/logo-vdesign.png') }}" />
                     <noscript>
                         <img width="402" height="300" src="wp-content/uploads/2023/07/S_logo_white_png-2.png" class="d_block m_auto" alt="" decoding="async" fetchpriority="high" />
@@ -89,13 +89,7 @@
                             <img width="22" height="22" src="/assets/images/logo/fb.png" class="d_block" alt="" decoding="async" />
                         </noscript>
                     </div>
-                    <div class="item relative">
-                        <a class="wrap_link op_0" href="https://twitter.com/vdesignads" target="_blank" title="Twitter">Twitter</a>
-                        <img width="22" height="22" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E" class="d_block" alt="" decoding="async" data-lazy-src="/assets/images/logo/twitter.png" />
-                        <noscript>
-                            <img width="22" height="22" src="/assets/images/logo/twitter.png" class="d_block" alt="" decoding="async" />
-                        </noscript>
-                    </div>
+
                     <div class="item relative">
                         <a class="wrap_link op_0" href="https://www.instagram.com/vdesignads/" target="_blank" title="Instagram">Instagram</a>
                         <img width="22" height="22" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E" class="d_block" alt="" decoding="async" data-lazy-src="/assets/images/logo/ig.png" />

@@ -19,10 +19,16 @@
                 </div>
                 <div class="filter_group relative">
                     <select data-name="cat" name="cat" id="cat" class="custom_sl">
-                        <option value="all" selected>Danh mục</option>
-                        
-                        <option value="1">1</option>
-                      
+                        <option value="all" selected>Tất cả dự án</option>
+
+                        <option value="1">Bảng Hiệu Ngoại Thất</option>
+                        <option value="1">Bảng Hiệu Nội Thất</option>
+                        <option value="1">Bảng Hiệu Đèn LED</option>
+                        <option value="1">Bảng Hiệu Chạy Quảng Cáo</option>
+                        <option value="1">Mặt Dựng ALU</option>
+                        <option value="1">Bảng Tên Công Ty</option>
+                        <option value="1">Chữ nổi</option>
+                        <option value="1">In Phun KTS</option>
                     </select>
                 </div>
             </div>
@@ -50,6 +56,59 @@
                 <path d="M5.24994 14.625C6.28547 14.625 7.12494 13.7855 7.12494 12.75C7.12494 11.7145 6.28547 10.875 5.24994 10.875C4.21441 10.875 3.37494 11.7145 3.37494 12.75C3.37494 13.7855 4.21441 14.625 5.24994 14.625Z" stroke="#272D35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </div>
+    </div>
+</section>
+<section class="section project_page_3 rocket-lazyload lazyloaded" id="pj_section" style="background-image: url(&quot;https://sarchitects.com.vn/wp-content/uploads/2023/08/bg_1.png&quot;);" data-ll-status="loaded">
+    <div class="grid-container">
+        <div id="projects_wrapper" class="" style="">
+            <script>
+                jQuery("#projects_wrapper").removeClass("loading");
+            </script>
+            <div class="grid_box grid_3 mobile_grid_2" id="project_list">
+                <div class="project_item relative hover_zoom_img">
+                <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-tournesol/" class="wrap_link"></a>
+                <div class="img_wrap">
+                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_01-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                </div>
+                <div class="cont_wrap absolute ts_04">
+                    <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
+                        PHU YEN TOURNESOL
+                    </h3>
+                </div>
+            </div>
+
+            <div class="project_item relative hover_zoom_img">
+                <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-house-3/" class="wrap_link"></a>
+                <div class="img_wrap">
+                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                </div>
+                <div class="cont_wrap absolute ts_04">
+                    <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
+                        PHU YEN HOUSE 3
+                    </h3>
+                </div>
+            </div>
+
+            <div class="project_item relative hover_zoom_img">
+                <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-house-3/" class="wrap_link"></a>
+                <div class="img_wrap">
+                    <img width="1920" height="1080" src="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/10/RENDER_TC_THONG-TANG_01-3-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
+                </div>
+                <div class="cont_wrap absolute ts_04">
+                    <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">
+                        PHU YEN HOUSE 3
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="text_center">
+            <div class="load_more_projects btn_secondary" data-page="3" data-target="project_list" data-max="3">
+                XEM THÊM                    </div>
+        </div>
+    </div>
+    </div>
+        <input type="hidden" id="all_filters" data-search="all" data-cat="all" data-location="all" data-size="all" data-limit="12">
     </div>
 </section>
 @endsection

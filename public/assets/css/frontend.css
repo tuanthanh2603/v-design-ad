@@ -926,7 +926,7 @@ header#masthead nav{
     margin-right: 0.625rem;
 }
 .projects_filters .select-styled:before{
-    background-image: url('../../images/CaretDown.svg');
+    background-image: url('../../static/CaretDown.svg');
     position: absolute;
     top: 50%;
     right: 20px;

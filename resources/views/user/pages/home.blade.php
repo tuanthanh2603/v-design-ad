@@ -53,7 +53,7 @@
                 <div class="terms_menu">
                     <ul class="ls_none m_0 flex_box al_center jus_end tablet_jus_center">
                         <li>
-                            <a class="flex_box al_center" href="/danh-sach-dich-vu/">
+                            <a class="flex_box al_center" href="{{ url('/dich-vu') }}">
                                 <svg width="0" height="1" viewBox="0 0 35 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="35" y1="0.5" x2="-4.37114e-08" y2="0.499997" stroke="#FFF"></line>
                                 </svg>
