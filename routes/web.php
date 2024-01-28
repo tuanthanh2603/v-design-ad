@@ -40,13 +40,14 @@ Route::prefix('san-pham')->group(function() {
 Route::get('/lien-he', [HomeController::class, 'showContact']);
 Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
 Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
-Route::get('/admin', function(){
-    return view('login');
-});
+
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLoginForm');
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
+Route::post('/login', [AdminController::class, 'login'])->name('login');
+Route::post('/register', [AdminController::class, 'register'])->name('register');
+Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
-    Route::get('/', [AdminController::class, 'showDashboard']);
+    Route::get('/', [AdminController::class, 'showDashboard'])->name('showDashboard');
     Route::get('/dich-vu', [AdminController::class, 'showService']);
     Route::get('/san-pham', [AdminController::class, 'showProduct']);
     Route::get('/tai-khoan', [AdminController::class, 'showAccount']);

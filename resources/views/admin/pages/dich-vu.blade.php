@@ -1,5 +1,5 @@
-@extends('admin.layout-admin')
-@section('dashboard')
+@extends('admin.layouts.master')
+@section('content')
     <div class="container-fluid py-4">
         <div class="row">
             <div class="col-md-6 mt-4">
