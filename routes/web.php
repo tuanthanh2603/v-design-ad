@@ -40,9 +40,7 @@ Route::prefix('san-pham')->group(function() {
 Route::get('/lien-he', [HomeController::class, 'showContact']);
 Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
 Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
-Route::get('/admin', function(){
-    return view('login');
-});
+
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLoginForm');
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
 Route::prefix('admin')->middleware('checkRole:admin')->group(function () {

@@ -1,4 +1,4 @@
-@extends('admin.layout-admin')
-@section('dashboard')
+@extends('admin.layouts.master')
+@section('content')
 <h1>tk</h1>
 @endsection
