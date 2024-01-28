@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjectController;
@@ -36,8 +37,13 @@ Route::prefix('dich-vu')->group(function() {
 Route::prefix('san-pham')->group(function() {
     Route::get('/', [ProductController::class, 'showProduct']);
 });
+// Liên hệ
+Route::prefix('lien-he')->group(function() {
+    Route::get('/', [ContactController::class, 'showContact']);
+    Route::post('/sendMessage', [ContactController::class, 'sendMessage']); // post [name, phone, message, status, date]
+});
 
-Route::get('/lien-he', [HomeController::class, 'showContact']);
+
 Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
 Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
 

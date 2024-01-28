@@ -52,7 +52,7 @@
                                             Văn phòng Hồ Chí Minh </span>
                                     </div>
                                     <div class="info fs_14 lh_20 fw400">
-                                        <p><strong>Địa chỉ</strong>: <a href="https://maps.app.goo.gl/y5kryVNPnupiwKuz8">23D
+                                        <p><strong>Địa chỉ</strong>: <a href="https://www.google.com/maps/place/23d+Mi%E1%BA%BFu+G%C3%B2+Xo%C3%A0i,+B%C3%ACnh+H%C6%B0ng+Ho%C3%A0+A,+B%C3%ACnh+T%C3%A2n,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7796168,106.6063889,17z/data=!3m1!4b1!4m6!3m5!1s0x31752c13a469e5db:0x4c1eda14a35b7fa3!8m2!3d10.7796115!4d106.6089638!16s%2Fg%2F11s0jqrxyf?entry=ttu">23D
                                                 Miếu Gò Xoài, Bình Hưng Hoà A, Bình Tân, TP. Hồ Chí Minh</a><br>
                                             <strong>Điện thoại</strong>: <a href="tel:0975353597">0975 3535 97</a><br>
 
@@ -70,26 +70,13 @@
                                     </div>
                                     <div class="info fs_14 lh_20 fw400">
                                         <p><strong>Địa chỉ</strong>: <a
-                                                href="https://maps.app.goo.gl/y5kryVNPnupiwKuz8">40/31 Miếu Gò Xoài, Bình
+                                                href="https://www.google.com/maps/place/V+Design/@10.7814388,106.6097946,20.75z/data=!4m15!1m8!3m7!1s0x31752c1240d96173:0x28aefa3c56df604e!2zNDAvMzEgTWnhur91IEfDsiBYb8OgaSwgQsOsbmggSMawbmcgSG_DoCBBLCBCw6xuaCBUw6JuLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzAwMDA!3b1!8m2!3d10.7815743!4d106.6098242!16s%2Fg%2F11j2vv2g__!3m5!1s0x31752d460106b081:0x211a2bde1f945d7a!8m2!3d10.7815743!4d106.6098242!16s%2Fg%2F11tfj3b7lj?entry=ttu">40/31 Miếu Gò Xoài, Bình
                                                 Hưng Hoà A, Bình Tân, TP. Hồ Chí Minh</a><br>
                                             <strong>Điện thoại</strong>: <a href="tel:0855445533">0855 44 55 33</a><br>
 
                                         </p>
                                     </div>
-                                    <div class="relative map_wrap img_wrap">
-                                        <a href="https://maps.app.goo.gl/y5kryVNPnupiwKuz8" target="_blank"
-                                            class="wrap_link"></a>
-                                        <img width="574" height="160"
-                                            src="https://sarchitects.com.vn/wp-content/uploads/2023/07/map.jpg"
-                                            class="lazyloaded" alt="" decoding="async"
-                                            sizes="(max-width: 574px) 100vw, 574px"
-                                            srcset="https://sarchitects.com.vn/wp-content/uploads/2023/07/map.jpg 574w, https://sarchitects.com.vn/wp-content/uploads/2023/07/map-300x84.jpg 300w"
-                                            data-ll-status="loaded"><noscript><img width="574" height="160"
-                                                src="https://sarchitects.com.vn/wp-content/uploads/2023/07/map.jpg"
-                                                class="" alt="" decoding="async"
-                                                srcset="https://sarchitects.com.vn/wp-content/uploads/2023/07/map.jpg 574w, https://sarchitects.com.vn/wp-content/uploads/2023/07/map-300x84.jpg 300w"
-                                                sizes="(max-width: 574px) 100vw, 574px" /></noscript>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -105,68 +92,7 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="/lien-he-s-architects/#wpcf7-f5-o1" method="post" class="wpcf7-form init"
-                                    aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="5">
-                                        <input type="hidden" name="_wpcf7_version" value="5.7.7">
-                                        <input type="hidden" name="_wpcf7_locale" value="en_US">
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1">
-                                        <input type="hidden" name="_wpcf7_container_post" value="0">
-                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                    </div>
-                                    <div class="form_wrap flex_box flex_wrap jus_between">
-                                        <div class="col_6 mobile_col_12 relative form_group">
-                                            <p><label for="your-name">HỌ VÀ TÊN</label><span
-                                                    class="wpcf7-form-control-wrap" data-name="your-name"><input
-                                                        size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                        id="your-name" aria-required="true" aria-invalid="false"
-                                                        value="" type="text" name="your-name"></span>
-                                            </p>
-                                        </div>
-                                        <div class="col_6 mobile_col_12 relative form_group">
-                                            <p><label for="your-phone">SỐ ĐIỆN THOẠI</label><span
-                                                    class="wpcf7-form-control-wrap" data-name="your-phone"><input
-                                                        size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-                                                        id="your-phone" aria-required="true" aria-invalid="false"
-                                                        value="" type="tel" name="your-phone"></span>
-                                            </p>
-                                        </div>
-                                        <div class="col_6 mobile_col_12 relative form_group">
-                                            <p><label for="your-email">EMAIL</label><span class="wpcf7-form-control-wrap"
-                                                    data-name="your-email"><input size="40"
-                                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                        id="your-email" aria-required="true" aria-invalid="false"
-                                                        value="" type="email" name="your-email"></span>
-                                            </p>
-                                        </div>
-                                        <div class="col_6 mobile_col_12 relative form_group">
-                                            <p><label for="your-address">ĐỊA CHỈ</label><span
-                                                    class="wpcf7-form-control-wrap" data-name="your-address"><input
-                                                        size="40" class="wpcf7-form-control wpcf7-text"
-                                                        id="your-address" aria-invalid="false" value=""
-                                                        type="text" name="your-address"></span>
-                                            </p>
-                                        </div>
-                                        <div class="col_12 relative form_group">
-                                            <p><label for="your-message">NỘI DUNG TIN NHẮN</label><span
-                                                    class="wpcf7-form-control-wrap" data-name="your-message">
-                                                    <textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" id="your-message"
-                                                        aria-invalid="false" name="your-message"></textarea>
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <div class="col_12 relative form_group submit_btn mb_text_center">
-                                            <p><input class="wpcf7-form-control has-spinner wpcf7-submit btn_submit"
-                                                    type="submit" value="GỬI TIN NHẮN"><span
-                                                    class="wpcf7-spinner"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                </form>
+                                @include('user.components.form-contact')
                             </div>
                         </div>
 
