@@ -11,7 +11,7 @@
         <div class="flex_box jus_between al_start flex_wrap">
             <div class="col_5 tablet_col_12">
                 <div class="heading">
-                    <h2 class="sec_title" style="color: #C5A47E">
+                    <h2 class="sec_title" style="color: #C5A47E; " >
                             Thiết kế bảng hiệu                        </h2>
                         <div class="fs_20 lh_24 fw400">
                             Tư vấn và thiết kế bảng hiệu dựa trên yêu cầu và mục tiêu quảng cáo của khách hàng.                       </div>
@@ -35,7 +35,7 @@
         <div class="flex_box jus_between al_start flex_wrap">
             <div class="col_5 tablet_col_12">
                 <div class="heading">
-                    <h2 class="sec_title" style="color: #C5A47E">
+                    <h2 class="sec_title" style="color: #C5A47E;">
                             In Ấn và Sản Xuất                       </h2>
                         <div class="fs_20 lh_24 fw400">
                             In ấn bảng hiệu sử dụng công nghệ và vật liệu chất lượng cao. Sản xuất bảng hiệu từ các vật liệu như nhôm, kính, acrylic, PVC, hay composite.                        </div>
