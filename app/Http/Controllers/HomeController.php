@@ -29,14 +29,14 @@ class HomeController extends Controller
             'services' => $services,
         ]);
     }
-    
+
     public function showIntroduce(){
         return  view('user.pages.introduce', [
             'title' => 'Giới thiệu'
         ]);
     }
     public function showNews(){
-        return  view('user.pages.news', [
+        return  view('user.pages.news.index', [
             'title' => 'Xu hướng thiết kế'
         ]);
     }

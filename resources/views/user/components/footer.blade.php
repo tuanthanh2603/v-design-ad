@@ -10,22 +10,22 @@
                         <div class="menu_footer">
                             <ul id="menu-menu-footer" class="m_0 ls_none flex_box al_center tablet_jus_center flex_wrap">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88">
-                                    <a href="ve-s-architects/index.html">Về V Design</a>
+                                    <a href="{{ url('/gioi-thieu') }}">Về V Design</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
-                                    <a href="du-an-s-architects/index.html">Dự án</a>
+                                    <a href="{{ url('/du-an') }}">Dự án</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90">
-                                    <a href="tin-tuc-su-kien/index.html">Dịch vụ</a>
+                                    <a href="{{ url('dich-vu') }}">Dịch vụ</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
-                                    <a href="tuyen-dung/index.html">Sản phẩm</a>
+                                    <a href="{{ url('/san-pham') }}">Sản phẩm</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
-                                    <a href="tuyen-dung/index.html">Xu hướng thiết kế</a>
+                                    <a href="{{ url('/xu-huong-thiet-ke') }}">Xu hướng thiết kế</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89">
-                                    <a href="lien-he-s-architects/index.html">Liên hệ</a>
+                                    <a href="{{ url('/lien-he') }}">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>

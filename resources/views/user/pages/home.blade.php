@@ -92,8 +92,8 @@
     <div class="grid-container">
         <div class="flex_box jus_between al_center tablet_flex_col">
             <div class="col_4 tablet_col_12 tablet_text_center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-                <h2 class="sec_title text_white">
-                    TIN TỨC & SỰ KIỆN </h2>
+                <h2 class="sec_title text_white" style="font-size: 3rem">
+                    XU HƯỚNG THIẾT KẾ </h2>
                 <div class="des fs_20 lh_30 fw400 text_white">
                     Xu hướng, kiến thức thiết kế mới nhất </div>
             </div>
