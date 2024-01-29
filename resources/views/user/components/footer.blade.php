@@ -31,28 +31,8 @@
                         </div>
                     </div>
                     <div class="right_col tablet_col_12">
-                        <div class="socials_footer flex_box al_center jus_end tablet_jus_center">
-                            <div class="item relative hover_zoom_img">
-                                <a class="wrap_link op_0" href="https://www.facebook.com/vdesignads/" target="_blank" title="Facebook">Facebook</a>
-                                <img width="22" height="22" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" data-lazy-src="/assets/images/logo/fb.png" />
-                                <noscript>
-                                    <img width="22" height="22" src="/assets/images/logo/fb.png" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" />
-                                </noscript>
-                            </div>
-                            <div class="item relative hover_zoom_img">
-                                <a class="wrap_link op_0" href="https://twitter.com/vdesignads" target="_blank" title="Twitter">Twitter</a>
-                                <img width="22" height="22" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" data-lazy-src="/assets/images/logo/twitter.png" />
-                                <noscript>
-                                    <img width="22" height="22" src="/assets/images/logo/twitter.png" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" />
-                                </noscript>
-                            </div>
-                            <div class="item relative hover_zoom_img">
-                                <a class="wrap_link op_0" href="https://www.instagram.com/vdesignads/" target="_blank" title="Instagram">Instagram</a>
-                                <img width="22" height="22" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2022%2022'%3E%3C/svg%3E" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" data-lazy-src="/assets/images/logo/ig.png" />
-                                <noscript>
-                                    <img width="22" height="22" src="/assets/images/logo/ig.png" class="d_block hover_zoom" alt="" decoding="async" loading="lazy" />
-                                </noscript>
-                            </div>
+                        <div class="copyright fs_14 lh_30 fw300 tablet_text_center">
+                            <p>Lượt truy cập: </p>
                         </div>
                         <div class="copyright fs_14 lh_30 fw300 tablet_text_center">
                             <p>Copyright © 2024 by {{ config('app.name') }}</p>

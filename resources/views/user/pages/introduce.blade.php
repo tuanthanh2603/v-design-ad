@@ -101,10 +101,30 @@
     line-height: 1.6;
     margin-bottom: 0;
 }
+.icon-intro{
+    height: 3.4375rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    display: inline-block;
+    color: #C5A47E;
+}
+.icon-intro svg{
+    max-height: 100%;
+    width: auto;
+    text-align: center;
+    transition: transform 0.5s ease;
+    color: #C5A47E;
+
+}
+.icon-intro:hover svg {
+        transform: rotate(360deg);
+    }
 </style>
 <div id="banner_gr" class="banner_gr section" >
     <div class="banner_def"></div>
-    <img src="https://thebestcons.vn/wp-content/uploads/2023/10/Rectangle-903-1.jpg" alt="">
+    <img src="{{ asset('static/intro.jpg') }}" alt="">
     <div class="gr_head" style="bottom: 3.49rem">
         <div class="grid-container">
             <h1>Giới thiệu về V Design</h1>
@@ -132,6 +152,52 @@
         </div>
     </div>
 </div>
+<section class="section home_3 bg_cus rocket-lazyload lazyloaded"
+    style="padding: 4rem 0; background-image: url(&quot;{{ asset('assets/images/slide-1-1-1.jpeg') }}&quot;);"
+    data-ll-status="loaded">
+    <div class="grid-container">
+        <div class="flex_box jus_between al_center tablet_flex_col">
+            <div class="col_4 tablet_col_12 tablet_text_center aos-init aos-animate" data-aos="fade-right" data-aos-delay="300"
+                data-aos-duration="500">
+                <img src="{{ asset('static/logo-vdesign.png') }}" alt="">
+                <div style="color: #fff">V Design - Đối Tác Hoàn Hảo Cho Bảng Hiệu Quảng Cáo</div>
+            </div>
+            <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
+                data-aos-duration="500" style="color:#fff">
+
+                <span >GIỚI THIỆU</span>
+                <h2 style="color: #C5A47E; font-size: 3.3rem;">V Design</h2>
+                <div>Chúng tôi tạo nên những sản phẩm đẳng cấp, kết hợp sự hiện đại, đơn giản thanh lịch và màu sắc sang trọng. Tại V Design, chúng tôi cam kết mang lại chất lượng tốt nhất thông qua dịch vụ thiết kế & thi công trọn gói. Chúng tôi chăm sóc từng công đoạn với sự chỉn chu và tỉ mỉ, biến ý tưởng trên bảng vẽ thành hiện thực với thời gian hợp lý.</div>
+                <div class="grid_box grid_3 mobile_grid_3" style="margin-top: 3rem">
+                    <div>
+                        <div class="icon-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 0.8rem; color:#C5A47E;">TƯ VẤN</h3>
+                    </div>
+                    <div>
+                        <div class="icon-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dropbox" viewBox="0 0 16 16">
+                                <path d="M8.01 4.555 4.005 7.11 8.01 9.665 4.005 12.22 0 9.651l4.005-2.555L0 4.555 4.005 2zm-4.026 8.487 4.006-2.555 4.005 2.555-4.005 2.555zm4.026-3.39 4.005-2.556L8.01 4.555 11.995 2 16 4.555 11.995 7.11 16 9.665l-4.005 2.555z"/>
+                              </svg>
+                        </div>
+                        <h3 style="font-size: 0.8rem; color:#C5A47E;">THIẾT KẾ</h3>
+                    </div>
+                    <div>
+                        <div class="icon-intro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-palette2" viewBox="0 0 16 16">
+                                <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a3 3 0 0 1-2.121-.879A3 3 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0M15 15v-4H9.258l-4.015 4zM0 .5v12.495zm0 12.495V13z"/>
+                              </svg>
+                        </div>
+                        <h3 style="font-size: 0.8rem; color:#C5A47E;">THI CÔNG</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="section home_3 bg_cus rocket-lazyload lazyloaded"
     style="background-image: url(&quot;{{ asset('assets/images/slide-1-1-1.jpeg') }}&quot;);"
     data-ll-status="loaded">
