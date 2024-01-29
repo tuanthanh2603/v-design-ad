@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('page_views', function (Blueprint $table) {
             $table->id();
-            $table->double('count');
-            // $table->timestamps();
+            $table->integer('count');
         });
     }
 

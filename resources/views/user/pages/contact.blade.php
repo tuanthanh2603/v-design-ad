@@ -31,7 +31,7 @@
                 </div>
             </div>
             <section class="section contact_page bg_cus rocket-lazyload lazyloaded"
-                style="background-image: url(&quot;https://sarchitects.com.vn/wp-content/uploads/2023/07/Slice-1.jpg&quot;);"
+                
                 data-ll-status="loaded">
                 <div class="grid-container">
                     <div class="flex_box jus_between al_start flex_wrap">
