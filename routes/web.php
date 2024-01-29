@@ -64,6 +64,7 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
     Route::get('/tin-tuc', [AdminController::class, 'showNews']);
     Route::prefix('images')->group(function () {
         Route::post('upload', [ImageController::class, 'upload'])->name('image.upload');
+        Route::post('/multi/upload', [ImageController::class, 'multiUpload'])->name('image.multiUpload');
     });
     Route::prefix('categories')->group(function () {
         Route::get('', [ManageCategoryController::class, 'index']);

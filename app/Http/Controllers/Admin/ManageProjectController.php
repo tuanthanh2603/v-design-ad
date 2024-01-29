@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -51,6 +52,20 @@ class ManageProjectController extends Controller
             Session::flash('success', 'Thêm dự án thành công');
         } else {
             Session::flash('error', 'Có lỗi xảy ra khi thêm dự án');
+        }
+
+        $albums = $request->input('albums');
+        if ($project && $albums) {
+            $albumPaths = explode(',', $albums);
+    
+            foreach ($albumPaths as $albumPath) {
+                $trimmedPath = trim($albumPath);
+                $image = new Image();
+                $image->sku = $project->sku;
+                $image->featured = 0;
+                $image->url = $trimmedPath;
+                $image->save();
+            }
         }
 
         return redirect()->back();

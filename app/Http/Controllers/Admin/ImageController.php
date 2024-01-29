@@ -42,4 +42,18 @@ class ImageController extends Controller
 
         return response()->json(['path' => "/storage/{$prefix}/{$fileName}"]);
     }
+
+    public function multiUpload(Request $request)
+    {
+        $paths = [];
+
+        if ($request->hasFile('albums')) {
+            foreach ($request->file('albums') as $album) {
+                $path = $this->processUpload($album);
+                $paths[] = json_decode($path->getContent(), true)['path'];
+            }
+        }
+
+        return response()->json(['paths' => $paths]);
+    }
 }

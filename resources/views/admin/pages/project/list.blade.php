@@ -46,7 +46,7 @@
                                                         class="btn btn-link text-primary text-gradient px-3 mb-0">
                                                         <i class="fa fa-edit"></i> Chỉnh sửa
                                                     </a>
-                                                    <a href="#" data-id="{{ $project->id }}" data-url="{{ route('admin.categories.destroy') }}"
+                                                    <a href="#" data-id="{{ $project->id }}" data-url="{{ route('admin.projects.destroy') }}"
                                                         class="btn btn-delete btn-link text-danger text-gradient px-3 mb-0">
                                                         <i class="fa fa-trash"></i> Xoá
                                                     </a>
@@ -134,15 +134,26 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label>Hình ảnh</label>
+                                <label>Ảnh bìa</label>
                                 <div class="input-group form-group">
-                                    <input class="form-control" name="image" id="image" readonly style="height:41px;z-index:0" type="text">
+                                    <input class="form-control" name="image" id="image" placeholder="Chọn 1 ảnh" readonly style="height:41px;z-index:0" type="text">
                                     <div class="input-group-append">
                                         <label class="input-group-text btn btn-primary" for="image_file" id="uploadBtn">Chọn file</label>
                                         <input type="file" class="form-control-file d-none" id="image_file" name="image_file">
                                     </div>
                                 </div>
                                 <img id="previewImg" class="img-fluid" alt="" style="display:none;width:30%;">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Ảnh dự án</label>
+                                <div class="input-group form-group">
+                                    <input class="form-control" name="albums" id="albums" placeholder="Chọn nhiều ảnh" readonly style="height: 41px; z-index: 0" type="text">
+                                    <div class="input-group-append">
+                                        <label class="input-group-text btn btn-primary" for="albums_file" id="uploadBtn">Chọn file</label>
+                                        <input type="file" class="form-control-file d-none" id="albums_file" name="albums_file[]" multiple onchange="previewImages(this)">
+                                    </div>
+                                </div>
+                                <div id="previewContainer" style="display: flex; flex-wrap: wrap;"></div>
                             </div>
                             <div class="col-md-12">
                                 <label>Mô tả</label>
@@ -206,5 +217,58 @@
                 }
             });
         });
+
+        $('#albums_file').on('change', function() {
+            let albums = $('#albums_file').prop('files');
+            let formData = new FormData();
+
+            for (let i = 0; i < albums.length; i++) {
+                formData.append('albums[]', albums[i]);
+            }
+
+            $.ajax({
+                url: "{{ route('image.multiUpload') }}",
+                method: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(data) {
+                    if (data.paths && data.paths.length > 0) {
+                        $('#albums').val(data.paths.join(', '));
+
+                        // Hiển thị ảnh preview
+                        $('#previewContainer').html('');
+                        for (let i = 0; i < data.paths.length; i++) {
+                            $('#previewContainer').append(`<img style="width:100px; margin-right: 10px;" src="${data.paths[i]}" />`);
+                        }
+                    } else {
+                        $('#albums').val('');
+                        $('#previewContainer').html('');
+                    }
+                }
+            });
+        });
+
+        function previewImages(input) {
+            let previewContainer = $('#previewContainer');
+            previewContainer.html('');
+
+            if (input.files) {
+                for (let i = 0; i < input.files.length; i++) {
+                    let reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        previewContainer.append(`<img style="width:100px; margin-right: 10px;" src="${e.target.result}" />`);
+                    };
+
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+        }
+
+
     </script>
 @endsection
