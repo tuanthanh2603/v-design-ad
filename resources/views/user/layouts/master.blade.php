@@ -9,7 +9,7 @@
         position: fixed;
         bottom: 20px;
         right: 0;
-        z-index: 99999;
+        z-index: 999;
     }
     #gom-all-in-one #zalo-vr {
         transition: 1s all;
