@@ -1,59 +1,8 @@
-@extends('user.layouts.master')
+@extends('user.layouts.layout-news')
 @section('bodyClass', 'page-template page-template-templates page-template-projects page-template-templatesprojects-php
 page page-id-78 wp-custom-logo wp-embed-responsive right-sidebar nav-float-right separate-containers header-aligned-left
 dropdown-hover vsc-initialized using-mouse')
-@section('content')
-<div id="banner_gr" class="banner_gr section">
-    <div
-        class="swiper banner_slide swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress swiper-backface-hidden">
-        <div class="swiper-wrapper" id="swiper-wrapper-10efc78a41936f10cf" aria-live="off">
-            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 1"
-                style="width: 1280px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                <div class="img_wrap">
-                    <img width="1830" height="650"
-                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/lee-ferrell-UjX9YmFs_O4-unsplash-1.jpg"
-                        class="lazyloaded" alt="" decoding="async" data-ll-status="loaded"><noscript><img width="1830"
-                            height="650"
-                            src="https://sarchitects.com.vn/wp-content/uploads/2023/07/lee-ferrell-UjX9YmFs_O4-unsplash-1.jpg"
-                            class="" alt="" decoding="async" /></noscript>
-                </div>
-            </div>
-        </div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-    </div>
-    <div class="gr_head absolute left_cont">
-        <div class="container">
-            <h1>XU HƯỚNG THIẾT KẾ</h1>
-        </div>
-    </div>
-</div>
-
-<section class="media_page section">
-    <div class="grid-container">
-        <div class="flex_box al_end jus_between tablet_flex_col">
-
-            <div class="col_12 tablet_col_12">
-                <div class="terms_menu">
-                    <ul id="menu-menu-media-2"
-                        class="ls_none m_0 flex_box al_center jus_end tablet_jus_center mobile_jus_between">
-                        <li id="menu-item-640"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-640"><a
-                                href="https://sarchitects.com.vn/danh-muc-tin-tuc/xu-huong-thiet-ke/">Xu hướng thiết
-                                kế</a></li>
-                        <li id="menu-item-639"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-639"><a
-                                href="https://sarchitects.com.vn/danh-muc-tin-tuc/tin-s-architects/">Tin S
-                                Architects</a></li>
-                        <li id="menu-item-641"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641"><a
-                                href="https://sarchitects.com.vn/danh-muc-tin-tuc/su-kien/">Sự kiện</a></li>
-                        <li id="menu-item-642"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-642"><a
-                                href="https://sarchitects.com.vn/danh-muc-tin-tuc/thu-vien/">Thư viện</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+@section('news')
         <div class="grid_box grid_2 box_hot_posts tablet_grid_1">
             <div class="item relative">
                 <a href="https://sarchitects.com.vn/kts-doan-bang-giang-kts-can-hieu-va-nam-ro-yeu-to-ban-sac-ban-dia-trong-kien-truc-4/"
@@ -125,6 +74,5 @@ dropdown-hover vsc-initialized using-mouse')
                 </div>
             </div>
         </div>
-    </div>
-</section>
+
 @endsection
