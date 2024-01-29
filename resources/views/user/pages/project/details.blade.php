@@ -6,7 +6,10 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="img_wrap">
-                    <img width="1920" height="1080" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201080'%3E%3C/svg%3E" class="" alt="" decoding="async" data-lazy-srcset="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-1536x864.jpg 1536w" data-lazy-sizes="(max-width: 1920px) 100vw, 1920px" data-lazy-src="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08.jpg" /><noscript><img width="1920" height="1080" src="../../wp-content/uploads/2023/11/PYO_3D_PC_08.jpg" class="" alt="" decoding="async" srcset="https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08.jpg 1920w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-300x169.jpg 300w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-1024x576.jpg 1024w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-768x432.jpg 768w, https://sarchitects.com.vn/wp-content/uploads/2023/11/PYO_3D_PC_08-1536x864.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" /></noscript>
+                    <img width="1920" height="1080" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201080'%3E%3C/svg%3E" alt="" decoding="async" data-lazy-src="{{ $project->image }}" />
+                    <noscript>
+                        <img width="1920" height="1080" src="{{ $project->image }}" alt="" decoding="async" />
+                    </noscript>
                 </div>
             </div>
         </div>

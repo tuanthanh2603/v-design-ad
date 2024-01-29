@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\ManageCategoryController;
+use App\Http\Controllers\Admin\ManageProjectController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -70,5 +71,12 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::get('/edit/{id}', [ManageCategoryController::class, 'edit'])->name('admin.categories.edit');
         Route::post('/edit/{id}', [ManageCategoryController::class, 'update']);
         Route::delete('/destroy', [ManageCategoryController::class, 'destroy'])->name('admin.categories.destroy');
+    });
+    Route::prefix('projects')->group(function () {
+        Route::get('', [ManageProjectController::class, 'index']);
+        Route::post('/create', [ManageProjectController::class, 'create'])->name('admin.projects.create');
+        Route::get('/edit/{id}', [ManageProjectController::class, 'edit'])->name('admin.projects.edit');
+        Route::post('/edit/{id}', [ManageProjectController::class, 'update']);
+        Route::delete('/destroy', [ManageProjectController::class, 'destroy'])->name('admin.projects.destroy');
     });
 });

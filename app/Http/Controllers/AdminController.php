@@ -48,7 +48,9 @@ class AdminController extends Controller
     }
 
     public function showService(){
-        return view('admin.pages.dich-vu');
+        return view('admin.pages.dich-vu', [
+            'title' => 'Dịch vụ'
+        ]);
     }
 
     public function showProduct(){
@@ -58,15 +60,21 @@ class AdminController extends Controller
     }
     
     public function showAccount(){
-        return view('admin.pages.tai-khoan');
+        return view('admin.pages.tai-khoan', [
+            'title' => 'Tài khoản'
+        ]);
     }
 
     public function showCustomer(){
-        return view('admin.pages.khach-hang');
+        return view('admin.pages.khach-hang', [
+            'title' => 'Khách hàng'
+        ]);
     }
 
     public function showNews(){
-        return view('admin.pages.tin-tuc');
+        return view('admin.pages.tin-tuc', [
+            'title' => 'Tin tức'
+        ]);
     }
     
 }
