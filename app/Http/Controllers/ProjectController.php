@@ -25,7 +25,7 @@ class ProjectController extends Controller
         ]);
     }
 
-    public function showBySlug(Request $request, $projectSlug)
+    public function showProjectDetailBySlug(Request $request, $projectSlug)
     {
         $project = Project::where('slug', $projectSlug)->first();
         if ($project != null) {

@@ -66,7 +66,7 @@
             </script>
             <div class="grid_box grid_3 mobile_grid_2" id="project_list">
                 <div class="project_item relative hover_zoom_img">
-                <a href="https://sarchitects.com.vn/du-an-chi-tiet/phu-yen-tournesol/" class="wrap_link"></a>
+                <a href="{{ url('/du-an/sl') }}" class="wrap_link"></a>
                 <div class="img_wrap">
                     <img width="1920" height="1080" src="{{ asset('uploads/h1.jpg') }}" class="hover_zoom" alt="" decoding="async" loading="lazy" srcset="{{ asset('uploads/h1.jpg') }} 1920w, {{ asset('uploads/h1.jpg') }} 300w, {{ asset('uploads/h1.jpg') }} 1024w, {{ asset('uploads/h1.jpg') }} 768w, {{ asset('uploads/h1.jpg') }} 1536w" sizes="(max-width: 1920px) 100vw, 1920px">
                 </div>
