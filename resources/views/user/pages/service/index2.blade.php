@@ -9,7 +9,7 @@
 <section class="section recruit_page_2">
     <div class="grid-container">
         <div class="flex_box jus_between al_start flex_wrap">
-            <div class="col_5 tablet_col_12">
+            <div class="col_5 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                 <div class="heading">
                     <h2 class="sec_title" style="color: #C5A47E; " >
                             Thiết kế bảng hiệu                        </h2>
@@ -23,7 +23,7 @@
                     </div>
 
             </div>
-            <div class="col_7 tablet_col_12">
+            <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="img_wrap">
                     <img width="700" height="300" src="https://sarchitects.com.vn/wp-content/uploads/2023/07/View05-1.jpg" class="lazyloaded" alt="" decoding="async" data-ll-status="loaded"><noscript><img width="763" height="352" src="https://sarchitects.com.vn/wp-content/uploads/2023/07/View05-1.jpg" class="" alt="" decoding="async" /></noscript>                </div>
             </div>
@@ -33,7 +33,7 @@
 <section class="section recruit_page_2">
     <div class="grid-container">
         <div class="flex_box jus_between al_start flex_wrap">
-            <div class="col_5 tablet_col_12">
+            <div class="col_5 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                 <div class="heading">
                     <h2 class="sec_title" style="color: #C5A47E;">
                             In Ấn và Sản Xuất                       </h2>
@@ -45,7 +45,7 @@
                         Liên hệ tư vấn                    </div>
                 </div>
             </div>
-            <div class="col_7 tablet_col_12">
+            <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="img_wrap">
                     <img width="700" height="300" src="https://sarchitects.com.vn/wp-content/uploads/2023/07/View05-1.jpg" class="lazyloaded" alt="" decoding="async" data-ll-status="loaded"><noscript><img width="763" height="352" src="https://sarchitects.com.vn/wp-content/uploads/2023/07/View05-1.jpg" class="" alt="" decoding="async" /></noscript>                </div>
             </div>
