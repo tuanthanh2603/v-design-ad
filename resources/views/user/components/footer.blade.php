@@ -32,7 +32,7 @@
                     </div>
                     <div class="right_col tablet_col_12">
                         <div class="copyright fs_14 lh_30 fw300 tablet_text_center">
-                            <p>Lượt truy cập: </p>
+                            <p>Lượt truy cập: {{ $pageViews  }}</p>
                         </div>
                         <div class="copyright fs_14 lh_30 fw300 tablet_text_center">
                             <p>Copyright © 2024 by {{ config('app.name') }}</p>

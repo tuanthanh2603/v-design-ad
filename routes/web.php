@@ -26,7 +26,6 @@ Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
 Route::get('/dich-vu/{serviceSlug}', [ServiceController::class, 'showBySlug']);
 Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategorySlug']);
 // Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
-
 // Dự án
 Route::prefix('du-an')->group(function() {
     Route::get('/', [ProjectController::class, 'showProject']);

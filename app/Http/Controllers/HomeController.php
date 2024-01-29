@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\PageView;
 use App\Models\Post;
 use App\Models\Product;
 use App\Models\Project;
@@ -19,6 +20,7 @@ class HomeController extends Controller
         $topics = Topic::orderBy('created_at', 'desc')->take(4)->get();
         $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
         $services = Service::orderBy('created_at', 'desc')->take(3)->get();
+
         return view('user.pages.home', [
             'title' => 'Trang chủ',
             'projects' => $projects,
@@ -27,6 +29,7 @@ class HomeController extends Controller
             'topics' => $topics,
             'posts' => $posts,
             'services' => $services,
+            
         ]);
     }
 
