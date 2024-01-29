@@ -22,12 +22,6 @@ class Service extends Model
         'setup', // lắp đặt
         'waranty', // bảo hành
         'brand', // thương hiệu
-        'category_id'
     ];
-
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
 
 }
