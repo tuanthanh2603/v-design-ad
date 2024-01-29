@@ -180,10 +180,10 @@
                             style="width: 1280px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
                             <div class="img_wrap">
                                 <img width="1830" height="650"
-                                    src="https://sarchitects.com.vn/wp-content/uploads/2023/07/lee-ferrell-UjX9YmFs_O4-unsplash-1.jpg"
+                                    src="{{ asset('static/news.jpg') }}"
                                     class="lazyloaded" alt="" decoding="async" data-ll-status="loaded"><noscript><img width="1830"
                                         height="650"
-                                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/lee-ferrell-UjX9YmFs_O4-unsplash-1.jpg"
+                                        src="{{ asset('static/news.jpg') }}"
                                         class="" alt="" decoding="async" /></noscript>
                             </div>
                         </div>

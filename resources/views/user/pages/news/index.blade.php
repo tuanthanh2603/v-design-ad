@@ -9,10 +9,10 @@ dropdown-hover vsc-initialized using-mouse')
                     class="wrap_link"></a>
                 <div class="img_wrap">
                     <img width="902" height="508"
-                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/3443_20841_5921-1.jpg"
+                        src="{{ asset('static/news.jpg') }}"
                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image lazyloaded" alt=""
                         decoding="async" data-ll-status="loaded"><noscript><img width="902" height="508"
-                            src="https://sarchitects.com.vn/wp-content/uploads/2023/07/3443_20841_5921-1.jpg"
+                            src="{{ asset('static/news.jpg') }}"
                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                             decoding="async" /></noscript>
                 </div>
