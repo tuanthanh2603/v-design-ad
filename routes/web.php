@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\ManageCategoryController;
 use App\Http\Controllers\Admin\ManageProjectController;
+use App\Http\Controllers\Admin\ManageServiceController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -23,13 +24,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
+// Route::get('/danh-sach-dich-vu', [ServiceController::class, 'index']);
+// Route::get('/du-an', [ProjectController::class, 'index']);
 Route::get('/dich-vu/{serviceSlug}', [ServiceController::class, 'showBySlug']);
-Route::get('/danh-muc/{categorySlug}', [ServiceController::class, 'showByCategorySlug']);
+Route::get('/danh-muc/{categorySlug}', [ProjectController::class, 'showByCategorySlug']);
 // Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
 // Dự án
 Route::prefix('du-an')->group(function() {
-    Route::get('/', [ProjectController::class, 'showProject']);
+    Route::get('/', [ProjectController::class, 'index']);
     Route::get('/{projectSlug}', [ProjectController::class,'showProjectDetailBySlug']);
 });
 // Dịch vụ
@@ -79,5 +81,12 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::get('/edit/{id}', [ManageProjectController::class, 'edit'])->name('admin.projects.edit');
         Route::post('/edit/{id}', [ManageProjectController::class, 'update']);
         Route::delete('/destroy', [ManageProjectController::class, 'destroy'])->name('admin.projects.destroy');
+    });
+    Route::prefix('services')->group(function () {
+        Route::get('', [ManageServiceController::class, 'index']);
+        Route::post('/create', [ManageServiceController::class, 'create'])->name('admin.services.create');
+        Route::get('/edit/{id}', [ManageServiceController::class, 'edit'])->name('admin.services.edit');
+        Route::post('/edit/{id}', [ManageServiceController::class, 'update']);
+        Route::delete('/destroy', [ManageServiceController::class, 'destroy'])->name('admin.services.destroy');
     });
 });

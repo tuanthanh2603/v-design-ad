@@ -46,18 +46,18 @@
         </div>
         <div class="flex_box jus_between al_center tablet_flex_col">
             <div class="col_4 tablet_col_12 tablet_text_center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-                <h2 class="sec_title text_white">DỊCH VỤ</h2>
-                <div class="des fs_20 lh_30 fw400 text_white">Các dịch vụ do VDesignAds cung cấp</div>
+                <h2 class="sec_title text_white">DỰ ÁN</h2>
+                <div class="des fs_20 lh_30 fw400 text_white">Các dự án VDesignAds đã thực hiện</div>
             </div>
             <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="terms_menu">
                     <ul class="ls_none m_0 flex_box al_center jus_end tablet_jus_center">
                         <li>
-                            <a class="flex_box al_center" href="{{ url('/dich-vu') }}">
+                            <a class="flex_box al_center" href="{{ url('/du-an') }}">
                                 <svg width="0" height="1" viewBox="0 0 35 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="35" y1="0.5" x2="-4.37114e-08" y2="0.499997" stroke="#FFF"></line>
                                 </svg>
-                                <span class="fs_14 lh_28 fw500 text_white">TẤT CẢ DỊCH VỤ</span>
+                                <span class="fs_14 lh_28 fw500 text_white">TẤT CẢ DỰ ÁN</span>
                             </a>
                         </li>
                         @foreach($categories as $category)
@@ -77,12 +77,12 @@
     </div>
 </section>
 <section class="section home_2">
-    <div data-bg="{{ isset($services[0]) ? $services[0]->image : '' }}" class="box_project_home bg_cus rocket-lazyload" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+    <div data-bg="{{ isset($projects[0]) ? $projects[0]->image : '' }}" class="box_project_home bg_cus rocket-lazyload" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
         <div class="grid_box grid_3 mobile_grid_2">
-            @foreach($services as $service)
-            <div data-bg="{{ $service->image }}" class="item relative bg_cus rocket-lazyload" data-image="{{ $service->image }}">
-                <a href="/dich-vu/{{ $service->slug }}" class="wrap_link"></a>
-                <h3 class="fs_25 lh_28 fw300 text_white font_oswald text_uppercase">{{ mb_strtoupper($service->name, 'UTF-8') }}</h3>
+            @foreach($projects as $project)
+            <div data-bg="{{ $project->image }}" class="item relative bg_cus rocket-lazyload" data-image="{{ $project->image }}">
+                <a href="/du-an/{{ $project->slug }}" class="wrap_link"></a>
+                <h3 class="fs_25 lh_28 fw300 text_white font_oswald text_uppercase">{{ mb_strtoupper($project->name, 'UTF-8') }}</h3>
             </div>
             @endforeach
         </div>

@@ -9,11 +9,6 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-    public function showProject(){
-        return view('user.pages.project.index', [
-            'title' => 'Dự án'
-        ]);
-    }
     public function index()
     {
         $categories = Category::orderBy('created_at', 'desc')->take(4)->get();
@@ -34,6 +29,20 @@ class ProjectController extends Controller
                 'title' => 'Dự án ' . $project->name,
                 'project' => $project,
                 'images' => $images,
+            ]);
+        }
+        return redirect()->route('home');
+    }
+
+    public function showByCategorySlug(Request $request, $categorySlug)
+    {
+        $category = Category::where('slug', $categorySlug)->first();
+        if ($category != null) {
+            $projects = Project::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(6);
+            return view('user.pages.project.showByCategory', [
+                'title' => 'Dự án thuộc danh mục ' . $category->name,
+                'categories' => Category::orderBy('created_at', 'desc')->take(4)->get(),
+                'projects' => $projects,
             ]);
         }
         return redirect()->route('home');
