@@ -9,7 +9,7 @@
                         <h5>
                             <a data-bs-toggle="modal" data-bs-target="#createModal"
                                class="btn btn-link text-success text-gradient px-3 mb-0"><i class="fa fa-plus"></i> Thêm mới
-                            </a>    
+                            </a>
                         </h5>
                     </div>
                     <div class="card-body px-0 pt-0 pb-2">
@@ -30,12 +30,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($projects as $project)
+                                    @foreach($projects as $index => $project)
                                     <tr>
                                         <td>
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">{{ $project->id }}</h6>
+                                                    <h6 class="mb-0 text-sm">{{ $index + 1 }}</h6>
                                                 </div>
                                             </div>
                                         </td>
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label>Ảnh bìa</label>
+                                <label>Ảnh bìa (2560x1235)</label>
                                 <div class="input-group form-group">
                                     <input class="form-control" name="image" id="image" placeholder="Chọn 1 ảnh" readonly style="height:41px;z-index:0" type="text">
                                     <div class="input-group-append">

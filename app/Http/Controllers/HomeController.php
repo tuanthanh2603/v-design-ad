@@ -14,8 +14,8 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        $projects = Project::orderBy('created_at', 'desc')->take(6)->get();
-        $categories = Category::orderBy('created_at', 'desc')->take(3)->get();
+        $projects = Project::orderBy('id')->take(6)->get();
+        $categories = Category::orderBy('id', 'desc')->take(2)->get();
         $products = Product::orderBy('created_at', 'desc')->take(6)->get();
         $topics = Topic::orderBy('created_at', 'desc')->take(4)->get();
         $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
