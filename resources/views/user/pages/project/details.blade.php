@@ -79,7 +79,7 @@
                     </li>
                     <li class="flex_box al_center">
                         <span class="fs_14 lh_22 fw400">Vận chuyển</span>
-                        <strong class="fs_14 lh_22 fw600">Miễn Phí Nội Thành TP. Hồ Chí Minh</strong>
+                        <strong class="fs_14 lh_22 fw600">Miễn Phí Nội Thành TP. HCM</strong>
                     </li>
                     @if($project->address)
                     <li class="flex_box al_center">
