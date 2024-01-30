@@ -9,7 +9,7 @@
                         <h5>
                             <a data-bs-toggle="modal" data-bs-target="#createModal"
                                class="btn btn-link text-success text-gradient px-3 mb-0"><i class="fa fa-plus"></i> Thêm mới
-                            </a>    
+                            </a>
                         </h5>
                     </div>
                     <div class="card-body px-0 pt-0 pb-2">
@@ -21,7 +21,6 @@
                                         <th class="text-uppercase text-secondary text-xxs">Thao tác</th>
                                         <th class="text-uppercase text-secondary text-xxs">Tên danh mục</th>
                                         <th class="text-uppercase text-secondary text-xxs">Mã danh mục</th>
-                                        <th class="text-uppercase text-secondary text-xxs">Hình ảnh</th>
                                         <th class="text-uppercase text-secondary text-xxs">Trạng thái</th>
                                         <th class="text-uppercase text-secondary text-xxs">Ngày tạo</th>
                                         <th class="text-uppercase text-secondary text-xxs">Ngày cập nhật</th>
@@ -29,12 +28,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($categories as $category)
+                                    @foreach($categories as $index => $category)
                                     <tr>
                                         <td>
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">{{ $category->id }}</h6>
+                                                    <h6 class="mb-0 text-sm">{{ $index + 1 }}</h6>
                                                 </div>
                                             </div>
                                         </td>
@@ -66,13 +65,7 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
-                                            <div class="d-flex px-2 py-1">
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm"><img style="width:100px" src="{{ $category->image }}"></h6>
-                                                </div>
-                                            </div>
-                                        </td>
+
                                         <td class="align-middle text-center text-sm">
                                             @php
                                                 if($category->status == 1){
@@ -127,23 +120,6 @@
                                     <input type="text" name="name" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <label>Hình ảnh</label>
-                                <div class="input-group form-group">
-                                    <input class="form-control" name="image" id="image" readonly style="height:41px;z-index:0" type="text">
-                                    <div class="input-group-append">
-                                        <label class="input-group-text btn btn-primary" for="image_file" id="uploadBtn">Chọn file</label>
-                                        <input type="file" class="form-control-file d-none" id="image_file" name="image_file">
-                                    </div>
-                                </div>
-                                <img id="previewImg" class="img-fluid" alt="" style="display:none;width:30%;">
-                            </div>
-                            <div class="col-md-12">
-                                <label>Mô tả</label>
-                                <div class="input-group mb-3">
-                                    <textarea name="description" rows="3" class="form-control"></textarea>
-                                </div>
-                            </div>
                         </div>
                         <hr>
                         <div class="text-center">
@@ -155,7 +131,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $('#image_file').on('change', function() {
             let image = $('#image_file').prop('files')[0];
             let formData = new FormData();
@@ -184,5 +160,5 @@
                 }
             });
         });
-    </script>
+    </script> --}}
 @endsection

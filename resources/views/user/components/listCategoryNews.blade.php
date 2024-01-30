@@ -9,8 +9,7 @@
                         kế</a></li>
                 <li id="menu-item-639"
                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-639"><a
-                        href="https://sarchitects.com.vn/danh-muc-tin-tuc/tin-s-architects/">Tin S
-                        Architects</a></li>
+                        href="https://sarchitects.com.vn/danh-muc-tin-tuc/tin-s-architects/">Tin V Design</a></li>
                 <li id="menu-item-641"
                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641"><a
                         href="https://sarchitects.com.vn/danh-muc-tin-tuc/su-kien/">Sự kiện</a></li>

@@ -11,7 +11,7 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $categories = Category::orderBy('created_at', 'desc')->take(4)->get();
+        $categories = Category::orderBy('created_at', 'desc')->get();
         $projects = Project::orderBy('created_at', 'desc')->paginate(6);
         return view('user.pages.project.index', [
             'title' => 'Tất cả dự án',
@@ -41,7 +41,7 @@ class ProjectController extends Controller
             $projects = Project::where('category_id', $category->id)->orderBy('created_at', 'desc')->paginate(6);
             return view('user.pages.project.showByCategory', [
                 'title' => 'Dự án thuộc danh mục ' . $category->name,
-                'categories' => Category::orderBy('created_at', 'desc')->take(4)->get(),
+                'categories' => Category::orderBy('created_at', 'desc')->get(),
                 'projects' => $projects,
             ]);
         }

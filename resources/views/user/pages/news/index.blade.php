@@ -42,7 +42,7 @@ dropdown-hover vsc-initialized using-mouse')
                 <div class="cont_wrap">
                     <div class="date_cat flex_box al_center">
                         <a href="https://sarchitects.com.vn/danh-muc-tin-tuc/tin-s-architects/">
-                            Tin S Architects </a>
+                            Tin V Design </a>
                         <div class="date">
                             12/07/2023 </div>
                     </div>
@@ -65,7 +65,7 @@ dropdown-hover vsc-initialized using-mouse')
                 <div class="cont_wrap">
                     <div class="date_cat flex_box al_center">
                         <a href="https://sarchitects.com.vn/danh-muc-tin-tuc/tin-s-architects/">
-                            Tin S Architects </a>
+                            V Design </a>
                         <div class="date">
                             12/07/2023 </div>
                     </div>

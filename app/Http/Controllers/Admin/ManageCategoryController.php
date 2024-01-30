@@ -32,9 +32,9 @@ class ManageCategoryController extends Controller
         } else {
             $category->slug = $slug;
         }
-        
-        $category->image = $request->input('image');
-        $category->description = $request->input('description');
+
+        // $category->image = $request->input('image');
+        // $category->description = $request->input('description');
         $category->status = 1;
         $category->save();
 
@@ -64,5 +64,5 @@ class ManageCategoryController extends Controller
             'message' => 'Có lỗi xảy ra khi xóa'
         ]);
     }
-    
+
 }
