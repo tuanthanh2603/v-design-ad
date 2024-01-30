@@ -12,16 +12,9 @@ class Service extends Model
 
     protected $fillable = [
         'name',
-        'sku',
         'slug',
         'description',
         'image',
-        'materials', // chất liệu
-        'size', // kích thước
-        'shipping', // vận chuyển
-        'setup', // lắp đặt
-        'waranty', // bảo hành
-        'brand', // thương hiệu
     ];
 
 }
