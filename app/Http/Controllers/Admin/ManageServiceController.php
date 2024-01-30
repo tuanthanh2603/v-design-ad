@@ -35,7 +35,6 @@ class ManageServiceController extends Controller
         
         $service->image = $request->input('image');
         $service->description = $request->input('description');
-        $service->status = 1;
         $service->save();
 
         if ($service) {
