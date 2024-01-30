@@ -144,7 +144,7 @@
                     <div class="date_cat flex_box al_center">
                         <a href="{{ url('/dich-vu') }}"></a>
                         <div class="date">
-                            {{ $service->created_at }} </div>
+                            {{ $service->created_at->format('d/m/Y') }} </div>
                     </div>
                     <h3 class="font_oswald fw300 limit_line ts_04 limit_2 text_uppercase">{{ $service->name }}</h3>
                 </div>

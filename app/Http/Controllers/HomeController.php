@@ -19,7 +19,7 @@ class HomeController extends Controller
         $products = Product::orderBy('created_at', 'desc')->take(6)->get();
         $topics = Topic::orderBy('created_at', 'desc')->take(4)->get();
         $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
-        $services = Service::orderBy('created_at', 'desc')->take(3)->get();
+        $services = Service::orderBy('id')->take(3)->get();
 
         return view('user.pages.home', [
             'title' => 'Trang chủ',
