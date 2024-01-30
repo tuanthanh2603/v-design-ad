@@ -10,8 +10,10 @@ use Illuminate\Http\Request;
 class ServiceController extends Controller
 {
     public function showService(){
+        $services = Service::all();
         return view('user.pages.service.index2', [
-            'title' => 'Dịch vụ'
+            'title' => 'Dịch vụ',
+            'services' => $services,
         ]);
     }
     public function index()

@@ -6,7 +6,33 @@
         <h1 class="sec_title_2">Dịch vụ tại V Design</h1>
     </div>
 </section>
+@foreach ($services as $service )
 <section class="section recruit_page_2">
+    <div class="grid-container">
+        <div class="flex_box jus_between al_start flex_wrap">
+            <div class="col_5 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                <div class="heading">
+                    <h2 class="sec_title" style="color: #C5A47E; " >
+                            {{ $service->name }}                        </h2>
+                        <div class="fs_20 lh_24 fw400">
+                            {{ $service->description }}                       </div>
+                                    </div>
+
+                    <div class="text_center">
+                        <div class="load_more_projects btn_secondary" onclick="window.location.href='{{ url('/lien-he') }}'">
+                            Liên hệ tư vấn                    </div>
+                    </div>
+
+            </div>
+            <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+                <div class="img_wrap">
+                    <img width="700" height="300" src="{{ $service->image }}" class="lazyloaded" alt="" decoding="async" data-ll-status="loaded"><noscript><img width="763" height="352" src="https://sarchitects.com.vn/wp-content/uploads/2023/07/View05-1.jpg" class="" alt="" decoding="async" /></noscript>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endforeach
+{{-- <section class="section recruit_page_2">
     <div class="grid-container">
         <div class="flex_box jus_between al_start flex_wrap">
             <div class="col_5 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
@@ -117,5 +143,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 @endsection
