@@ -19,7 +19,7 @@ class ContactController extends Controller
         $contact->name = $request->input('name');
         $contact->phone = $request->input('phone');
         $contact->message = $request->input('message');
-        $contact->status = 1;
+        $contact->status = 0;
         $contact->save();
 
         if ($contact) {
