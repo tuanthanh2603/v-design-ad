@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ManageCategoryController;
 use App\Http\Controllers\Admin\ManageContactController;
 use App\Http\Controllers\Admin\ManageProjectController;
 use App\Http\Controllers\Admin\ManageServiceController;
+use App\Http\Controllers\Admin\ManageTopicController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -96,5 +97,12 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::get('/edit/{id}', [ManageContactController::class, 'edit'])->name('admin.contacts.edit');
         Route::post('/edit/{id}', [ManageContactController::class, 'update']);
         Route::delete('/destroy', [ManageContactController::class, 'destroy'])->name('admin.contacts.destroy');
+    });
+    Route::prefix('topics')->group(function () {
+        Route::get('', [ManageTopicController::class, 'index']);
+        Route::post('/create', [ManageTopicController::class, 'create'])->name('admin.topics.create');
+        Route::get('/edit/{id}', [ManageTopicController::class, 'edit'])->name('admin.topics.edit');
+        Route::post('/edit/{id}', [ManageTopicController::class, 'update']);
+        Route::delete('/destroy', [ManageTopicController::class, 'destroy'])->name('admin.topics.destroy');
     });
 });
