@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/42d5adcbca.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/assets/js/ajax.js"></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/full/ckeditor.js"></script>
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
