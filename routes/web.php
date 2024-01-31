@@ -45,7 +45,7 @@ Route::prefix('san-pham')->group(function() {
 // Liên hệ
 Route::prefix('lien-he')->group(function() {
     Route::get('/', [ContactController::class, 'showContact']);
-    Route::post('/sendMessage', [ContactController::class, 'sendMessage']); // post [name, phone, message, status, date]
+    Route::post('/sendMessage', [ContactController::class, 'sendMessage'])->name('contact.sendMessage'); // post [name, phone, message, status, date]
 });
 
 
