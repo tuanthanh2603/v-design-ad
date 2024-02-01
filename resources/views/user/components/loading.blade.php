@@ -1,6 +1,17 @@
 <div class="loading-container">
     <div class="loading-background"></div>
-    <div class="loading-text">VDesignAds</div>
+    <div class="loading-text">
+        <span>V</span>
+        <span>D</span>
+        <span>e</span>
+        <span>s</span>
+        <span>i</span>
+        <span>g</span>
+        <span>n</span>
+        <span>A</span>
+        <span>d</span>
+        <span>s</span>
+    </div>
 </div>
 
 <style>
@@ -31,16 +42,21 @@
         font-family: 'Cursive', cursive;
         font-size: 60px;
         color: #FFF;
-        opacity: 0;
-        animation: fadeIn 2s ease-in-out forwards;
+        display: flex;
     }
 
-    @keyframes fadeIn {
+    .loading-text span {
+        display: inline-block;
+        overflow: hidden;
+        animation: revealText 2s ease-in-out forwards;
+    }
+
+    @keyframes revealText {
         0% {
-            opacity: 0;
+            clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
         }
         100% {
-            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
     }
 </style>
