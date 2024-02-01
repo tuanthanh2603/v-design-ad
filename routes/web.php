@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ManageTopicController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
@@ -54,6 +55,7 @@ Route::prefix('lien-he')->group(function() {
 
 Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
 Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
+Route::get('/bai-viet/{newSlug}', [PostController::class, 'showPostDetailBySlug']);
 
 Route::get('/login', [AdminController::class, 'showLoginForm'])->name('showLoginForm');
 Route::get('/register', [AdminController::class, 'showRegisterForm'])->name('showRegisterForm');
