@@ -83,10 +83,10 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::delete('/destroy', [ManageCategoryController::class, 'destroy'])->name('admin.categories.destroy');
     });
     Route::prefix('projects')->group(function () {
-        Route::get('', [ManageProjectController::class, 'index']);
+        Route::get('', [ManageProjectController::class, 'index'])->name('admin.projects.index');
         Route::post('/create', [ManageProjectController::class, 'create'])->name('admin.projects.create');
         Route::get('/edit/{id}', [ManageProjectController::class, 'edit'])->name('admin.projects.edit');
-        Route::post('/edit/{id}', [ManageProjectController::class, 'update']);
+        Route::post('/edit/{id}', [ManageProjectController::class, 'update'])->name('admin.projects.update');
         Route::delete('/destroy', [ManageProjectController::class, 'destroy'])->name('admin.projects.destroy');
     });
     Route::prefix('services')->group(function () {
