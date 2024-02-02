@@ -166,7 +166,7 @@
                 <div class="des fs_20 lh_30 fw400 text_white">
                     Xu hướng, kiến thức thiết kế mới nhất </div>
             </div>
-            <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+            <!-- <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="terms_menu">
                     <ul class="ls_none m_0 flex_box al_center jus_end tablet_jus_center">
                         @foreach($topics as $topic)
@@ -181,7 +181,7 @@
                         @endforeach
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="grid_box grid_3 mobile_grid_1">
             @foreach($posts as $post)
