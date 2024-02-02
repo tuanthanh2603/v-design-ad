@@ -15,16 +15,16 @@
                         <path d="M7.70312 13.2812C10.7838 13.2812 13.2812 10.7838 13.2812 7.70312C13.2812 4.62241 10.7838 2.125 7.70312 2.125C4.62241 2.125 2.125 4.62241 2.125 7.70312C2.125 10.7838 4.62241 13.2812 7.70312 13.2812Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M11.6465 11.6475L14.8739 14.8748" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <input type="text" name="search_project" id="search_project" placeholder="Tìm kiếm dự án">
+                    <input type="text" name="s" value="" id="keyword" placeholder="Tìm kiếm dự án">
                 </div>
-                <div class="filter_group relative">
+                <!-- <div class="filter_group relative">
                     <select data-name="cat" name="cat" id="cat" class="custom_sl">
                         <option value="all" selected>Danh mục</option>
                         @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
-                </div>
+                </div> -->
             </div>
             <div class="show_filter_btn_fixed">
                 <svg class="show_filter_btn_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,4 +79,18 @@
         </div>
     </div>
 </section>
+<script>
+    document.getElementById('keyword').addEventListener('change', function() {
+        var keyword = this.value;
+        var url = '/du-an/search?s=' + encodeURIComponent(keyword);
+        window.location.href = url;
+    });
+    document.getElementById('keyword').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            var keyword = this.value;
+            var url = '/du-an/search?s=' + encodeURIComponent(keyword);
+            window.location.href = url;
+        }
+    });
+</script>
 @endsection
