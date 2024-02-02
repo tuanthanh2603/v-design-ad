@@ -104,10 +104,10 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::delete('/destroy', [ManageContactController::class, 'destroy'])->name('admin.contacts.destroy');
     });
     Route::prefix('topics')->group(function () {
-        Route::get('', [ManageTopicController::class, 'index']);
+        Route::get('', [ManageTopicController::class, 'index'])->name('admin.topics.index');
         Route::post('/create', [ManageTopicController::class, 'create'])->name('admin.topics.create');
         Route::get('/edit/{id}', [ManageTopicController::class, 'edit'])->name('admin.topics.edit');
-        Route::post('/edit/{id}', [ManageTopicController::class, 'update']);
+        Route::post('/edit/{id}', [ManageTopicController::class, 'update'])->name('admin.topics.update');
         Route::delete('/destroy', [ManageTopicController::class, 'destroy'])->name('admin.topics.destroy');
     });
     Route::prefix('posts')->group(function () {
