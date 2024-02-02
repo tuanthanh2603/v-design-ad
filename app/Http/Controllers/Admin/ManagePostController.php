@@ -23,6 +23,55 @@ class ManagePostController extends Controller
         ]);
     }
 
+    public function edit($id)
+    {
+        $post = Post::where('id', $id)->first();
+        if($post) {
+            return view('admin.pages.post.edit', [
+                'title' => 'Chỉnh sửa bài viết: ' . $post->name,
+                'post' => $post,
+                'posts' => Post::all(),
+                'topics' => Topic::all(),
+            ]);
+        }
+        return redirect()->route('admin.pages.post.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'content' => 'required|string',
+            'image' => 'required|string',
+            'topic_id' => 'required|exists:topics,id'
+        ]);
+        $post = Post::find($id);
+        if (!$post) {
+            return redirect()->back()->with('error', 'Bài viết không tồn tại');
+        }
+        $post->title = $request->input('title');
+        $post->description = $request->input('description');
+        $post->content = $request->input('content');
+        $post->image = $request->input('image');
+        $post->topic_id = $request->input('topic_id');
+        $slug = Str::slug($request->input('title'), '-');
+        $existingSlug = Post::where('slug', $slug)->where('id', '!=', $id)->first();
+        if ($existingSlug) {
+            $order = Post::where('slug', 'like', $slug . '-%')->count() + 1;
+            $post->slug = $slug . '-' . $order;
+        } else {
+            $post->slug = $slug;
+        }
+        $post->save();
+        if ($post) {
+            Session::flash('success', 'Cập nhật bài viết thành công');
+        } else {
+            Session::flash('error', 'Có lỗi xảy ra khi cập nhật bài viết');
+        }
+        return redirect()->back();
+    }
+
     public function create(Request $request)
     {
         $topic = Topic::find($request->input('topic_id'));

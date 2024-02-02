@@ -112,10 +112,10 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::delete('/destroy', [ManageTopicController::class, 'destroy'])->name('admin.topics.destroy');
     });
     Route::prefix('posts')->group(function () {
-        Route::get('', [ManagePostController::class, 'index']);
+        Route::get('', [ManagePostController::class, 'index'])->name('admin.posts.index');
         Route::post('/create', [ManagePostController::class, 'create'])->name('admin.posts.create');
         Route::get('/edit/{id}', [ManagePostController::class, 'edit'])->name('admin.posts.edit');
-        Route::post('/edit/{id}', [ManagePostController::class, 'update']);
+        Route::post('/edit/{id}', [ManagePostController::class, 'update'])->name('admin.posts.update');
         Route::delete('/destroy', [ManagePostController::class, 'destroy'])->name('admin.posts.destroy');
     });
 });
