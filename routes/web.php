@@ -90,10 +90,10 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::delete('/destroy', [ManageProjectController::class, 'destroy'])->name('admin.projects.destroy');
     });
     Route::prefix('services')->group(function () {
-        Route::get('', [ManageServiceController::class, 'index']);
+        Route::get('', [ManageServiceController::class, 'index'])->name('admin.services.index');
         Route::post('/create', [ManageServiceController::class, 'create'])->name('admin.services.create');
         Route::get('/edit/{id}', [ManageServiceController::class, 'edit'])->name('admin.services.edit');
-        Route::post('/edit/{id}', [ManageServiceController::class, 'update']);
+        Route::post('/edit/{id}', [ManageServiceController::class, 'update'])->name('admin.services.update');
         Route::delete('/destroy', [ManageServiceController::class, 'destroy'])->name('admin.services.destroy');
     });
     Route::prefix('contacts')->group(function () {
