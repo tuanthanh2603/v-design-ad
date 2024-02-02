@@ -13,6 +13,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -52,7 +53,7 @@ Route::prefix('lien-he')->group(function() {
     Route::post('/sendMessage', [ContactController::class, 'sendMessage'])->name('contact.sendMessage'); // post [name, phone, message, status, date]
 });
 
-
+Route::get('/search', [SearchController::class, 'searchByKeyword'])->name('search.by.keyword');
 Route::get('/gioi-thieu', [HomeController::class, 'showIntroduce']);
 Route::get('/xu-huong-thiet-ke', [HomeController::class, 'showNews']);
 Route::get('/bai-viet/{newSlug}', [PostController::class, 'showPostDetailBySlug']);
