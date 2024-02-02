@@ -36,6 +36,7 @@ Route::get('/danh-muc/{categorySlug}', [ProjectController::class, 'showByCategor
 // Route::get('/du-an/{projectSlug}', [ProjectController::class, 'showBySlug']);
 // Dự án
 Route::prefix('du-an')->group(function() {
+    Route::get('/search', [ProjectController::class, 'search']);
     Route::get('/', [ProjectController::class, 'index']);
     Route::get('/{projectSlug}', [ProjectController::class,'showProjectDetailBySlug']);
 });

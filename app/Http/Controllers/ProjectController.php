@@ -20,6 +20,34 @@ class ProjectController extends Controller
         ]);
     }
 
+    public function search(Request $request){
+        $rawKeyword = $request->query('s');
+        $keyword = htmlspecialchars($rawKeyword);
+
+        if ($rawKeyword !== $keyword) {
+            return view('user.pages.project.search', [
+                'title' => 'Kết quả tìm kiếm',
+                'hasResults' => null,
+            ]);
+        }else{
+            $keyword = mb_strtolower($keyword);
+
+            $projects = Project::where('name', 'like', '%' . $keyword . '%')
+                ->orWhere('description', 'like', '%' . $keyword . '%')
+                ->orderBy('name', 'asc')
+                ->get();
+
+            $hasResults = $projects->isNotEmpty();
+            return view('user.pages.project.search', [
+                'title' => 'Kết quả tìm kiếm cho: '.$keyword.'',
+                'keyword' => $keyword,
+                'projects' => $projects,
+                'hasResults' => $hasResults,
+            ]);
+        }
+        
+    }
+
     public function showProjectDetailBySlug(Request $request, $projectSlug)
     {
         $project = Project::where('slug', $projectSlug)->first();
