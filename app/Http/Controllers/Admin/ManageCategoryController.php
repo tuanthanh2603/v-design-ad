@@ -47,6 +47,46 @@ class ManageCategoryController extends Controller
         return redirect()->back();
     }
 
+    public function edit($id)
+    {
+        $category = Category::where('id', $id)->first();
+        if($category) {
+            return view('admin.pages.category.edit', [
+                'title' => 'Chỉnh sửa danh mục: ' . $category->name,
+                'category' => $category,
+                'categories' => Category::all(),
+            ]);
+        }
+        return redirect()->intended('admin.categories.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+        $category = Category::find($id);
+        if (!$category) {
+            return redirect()->back()->with('error', 'Danh mục không tồn tại');
+        }
+        $category->name = $request->input('name');
+        $slug = Str::slug($request->input('name'), '-');
+        $existingSlug = Category::where('slug', $slug)->where('id', '!=', $id)->first();
+        if ($existingSlug) {
+            $order = Category::where('slug', 'like', $slug . '-%')->count() + 1;
+            $category->slug = $slug . '-' . $order;
+        } else {
+            $category->slug = $slug;
+        }
+        $category->save();
+        if ($category) {
+            Session::flash('success', 'Cập nhật danh mục thành công');
+        } else {
+            Session::flash('error', 'Có lỗi xảy ra khi cập nhật danh mục');
+        }
+        return redirect()->back();
+    }
+
     public function destroy(Request $request)
     {
         $id = (int)$request->input('id');

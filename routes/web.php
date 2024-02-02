@@ -76,10 +76,10 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::post('/multi/upload', [ImageController::class, 'multiUpload'])->name('image.multiUpload');
     });
     Route::prefix('categories')->group(function () {
-        Route::get('', [ManageCategoryController::class, 'index']);
+        Route::get('', [ManageCategoryController::class, 'index'])->name('admin.categories.index');
         Route::post('/create', [ManageCategoryController::class, 'create'])->name('admin.categories.create');
         Route::get('/edit/{id}', [ManageCategoryController::class, 'edit'])->name('admin.categories.edit');
-        Route::post('/edit/{id}', [ManageCategoryController::class, 'update']);
+        Route::post('/edit/{id}', [ManageCategoryController::class, 'update'])->name('admin.categories.update');
         Route::delete('/destroy', [ManageCategoryController::class, 'destroy'])->name('admin.categories.destroy');
     });
     Route::prefix('projects')->group(function () {
