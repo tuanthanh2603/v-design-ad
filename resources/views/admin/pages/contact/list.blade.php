@@ -36,10 +36,12 @@
                                         <td>
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <a href="{{ route('admin.contacts.edit', ['id' => $contact->id]) }}"
-                                                        class="btn btn-link text-primary text-gradient px-3 mb-0">
-                                                        <i class="fa fa-edit"></i> Chỉnh sửa
-                                                    </a>
+                                                    <button data-id="{{ $contact->id }}" data-status="{{ $contact->status == 0 ? 1 : 0 }}"
+                                                            data-url="{{ route('admin.contacts.updateStatus', ['id' => $contact->id]) }}"
+                                                            class="btn btn-link text-primary text-gradient px-3 mb-0 update-status-btn" data-status="{{ $contact->status }}">
+                                                        <i class="fa {{ $contact->status == 0 ? 'fa-check' : 'fa-times' }}"></i>
+                                                        <span class="status-text">{{ $contact->status == 0 ? 'Đã xử lý' : 'Chưa xử lý' }}</span>
+                                                    </button>
                                                     <a href="#" data-id="{{ $contact->id }}" data-url="{{ route('admin.contacts.destroy') }}"
                                                         class="btn btn-delete btn-link text-danger text-gradient px-3 mb-0">
                                                         <i class="fa fa-trash"></i> Xoá
@@ -64,7 +66,7 @@
                                         <td>
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">{{ $contact->message }}</h6>
+                                                    <textarea rows="3" class="form-control">{{ $contact->message }}</textarea>
                                                 </div>
                                             </div>
                                         </td>
@@ -134,4 +136,28 @@
             </div>
         </div>
     </div> -->
+<script>
+    $(document).ready(function () {
+        $('.update-status-btn').click(function (e) {
+            e.preventDefault();
+            var button = $(this);
+            var contactId = button.data('id');
+            var url = button.data('url');
+            var statusText = button.data('status');
+            $.ajax({
+                url: url,
+                type: 'PUT',
+                data: { status: statusText },
+                success: function (data) {
+                    alert('Cập nhật trạng thái thành công');
+                    location.reload();
+                },
+                error: function () {
+                    alert('Có lỗi xảy ra khi cập nhật trạng thái');
+                }
+            });
+        });
+    });
+</script>
+
 @endsection

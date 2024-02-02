@@ -20,6 +20,24 @@ class ManageContactController extends Controller
         ]);
     }
 
+    public function updateStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status' => 'required|in:0,1',
+        ]);
+
+        $contact = Contact::find($id);
+
+        if (!$contact) {
+            return response()->json(['success' => false, 'message' => 'Liên hệ không tồn tại']);
+        }
+
+        $contact->status = $request->input('status');
+        $contact->save();
+
+        return response()->json(['success' => true, 'message' => 'Cập nhật trạng thái liên hệ thành công']);
+    }
+
     public function destroy(Request $request)
     {
         $id = (int)$request->input('id');

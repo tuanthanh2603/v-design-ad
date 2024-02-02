@@ -101,6 +101,7 @@ Route::prefix('admin')->middleware('checkRole:admin')->group(function () {
         Route::post('/create', [ManageContactController::class, 'create'])->name('admin.contacts.create');
         Route::get('/edit/{id}', [ManageContactController::class, 'edit'])->name('admin.contacts.edit');
         Route::post('/edit/{id}', [ManageContactController::class, 'update']);
+        Route::put('/update-status/{id}', [ManageContactController::class, 'updateStatus'])->name('admin.contacts.updateStatus');
         Route::delete('/destroy', [ManageContactController::class, 'destroy'])->name('admin.contacts.destroy');
     });
     Route::prefix('topics')->group(function () {
