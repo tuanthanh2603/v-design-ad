@@ -57,7 +57,7 @@ class ManageCategoryController extends Controller
                 'categories' => Category::all(),
             ]);
         }
-        return redirect()->intended('admin.categories.index');
+        return redirect()->route('admin.categories.index');
     }
 
     public function update(Request $request, $id)
