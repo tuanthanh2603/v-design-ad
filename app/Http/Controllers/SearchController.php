@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Project;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
@@ -21,10 +22,14 @@ class SearchController extends Controller
             $keyword = mb_strtolower($keyword);
 
             $posts = Post::where('title', 'like', '%' . $keyword . '%')
-            ->orWhere('content', 'like', '%' . $keyword . '%')
-            ->orWhere('description', 'like', '%' . $keyword . '%')
-            ->orderBy('title', 'desc')
-            ->get();
+                ->orWhere('content', 'like', '%' . $keyword . '%')
+                ->orWhere('description', 'like', '%' . $keyword . '%')
+                ->orderBy('title', 'desc')
+                ->get();
+
+            $services = Service::where('name', 'like', '%' . $keyword . '%')
+                ->orWhere('description', 'like', '%' . $keyword . '%')
+                ->get();
 
             $projects = Project::where('name', 'like', '%' . $keyword . '%')
                 ->orWhere('description', 'like', '%' . $keyword . '%')
@@ -36,6 +41,7 @@ class SearchController extends Controller
                 'title' => 'Kết quả tìm kiếm cho: '.$keyword.'',
                 'keyword' => $keyword,
                 'projects' => $projects,
+                'services' => $services,
                 'posts' => $posts,
                 'hasResults' => $hasResults,
             ]);

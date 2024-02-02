@@ -5,6 +5,27 @@
 <section class="section search_page ">
     <div class="grid-container">
         <h1 class="sec_title text_primary text_center">Kết quả tìm kiếm cho: {{ $keyword }}</h1>
+        @if($services->isNotEmpty())
+        <div class="search_grid">
+            <h2 class="text_primary sec_title_2 text_center">Dịch vụ</h2>
+            <div class="inner grid_box grid_3 mobile_grid_2" id="services_search">
+                @foreach($services as $service)
+                <div class="project_item relative hover_zoom_img">
+                    <a href="/dich-vu" class="wrap_link"></a>
+                    <div class="img_wrap">
+                        <img width="1920" height="1080" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201080'%3E%3C/svg%3E" class="hover_zoom" alt="" decoding="async" data-lazy-src="{{ $service->image }}" />
+                        <noscript>
+                            <img width="1920" height="1080" src="{{ $service->image }}" class="hover_zoom" alt="" decoding="async" />
+                        </noscript>
+                    </div>
+                    <div class="cont_wrap absolute ts_04">
+                        <h3 class="limit_line limit_1 fs_18 lh_28 fw300 text_white font_oswald m_0">{{ $service->name }}</h3>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        @endif
         @if($projects->isNotEmpty())
         <div class="search_grid">
             <h2 class="text_primary sec_title_2 text_center">Dự án</h2>
