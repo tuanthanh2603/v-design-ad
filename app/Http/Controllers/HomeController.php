@@ -39,8 +39,10 @@ class HomeController extends Controller
         ]);
     }
     public function showNews(){
+        $posts = Post::orderBy('created_at', 'desc')->get();
         return  view('user.pages.news.index', [
-            'title' => 'Xu hướng thiết kế'
+            'title' => 'Xu hướng thiết kế',
+            'posts' => $posts,
         ]);
     }
 }

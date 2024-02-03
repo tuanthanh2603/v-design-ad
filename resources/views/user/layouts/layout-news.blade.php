@@ -198,7 +198,7 @@
             </div>
             <section class="media_page section">
                 <div class="grid-container">
-                    @include('user.components.listCategoryNews')
+                    <!-- @include('user.components.listCategoryNews') -->
                     @yield('news')
                 </div>
             </section>
