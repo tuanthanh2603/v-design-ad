@@ -44,6 +44,7 @@
                                         var relValue = selectedOption.data('rel');
                                         console.log("ID của option được chọn là: " + relValue);
                                     });
+                                    /// relValue chứa id 
 
                                 });
                             </script>
