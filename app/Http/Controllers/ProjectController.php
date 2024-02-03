@@ -21,32 +21,39 @@ class ProjectController extends Controller
     }
 
     public function search(Request $request){
-        $rawKeyword = $request->query('s');
-        $keyword = htmlspecialchars($rawKeyword);
-
-        if ($rawKeyword !== $keyword) {
-            return view('user.pages.project.search', [
-                'title' => 'Kết quả tìm kiếm',
-                'hasResults' => null,
-            ]);
-        }else{
+        $keyword = $request->query('s');
+        $categorySelected = $request->query('cat');
+    
+        $projects = Project::query();
+    
+        if (!empty($keyword)) {
+            $keyword = htmlspecialchars($keyword);
             $keyword = mb_strtolower($keyword);
-
-            $projects = Project::where('name', 'like', '%' . $keyword . '%')
-                ->orWhere('description', 'like', '%' . $keyword . '%')
-                ->orderBy('name', 'asc')
-                ->get();
-
-            $hasResults = $projects->isNotEmpty();
-            return view('user.pages.project.search', [
-                'title' => 'Kết quả tìm kiếm cho: '.$keyword.'',
-                'keyword' => $keyword,
-                'projects' => $projects,
-                'hasResults' => $hasResults,
-            ]);
+    
+            $projects->where(function ($query) use ($keyword) {
+                $query->where('name', 'like', '%' . $keyword . '%')
+                    ->orWhere('description', 'like', '%' . $keyword . '%');
+            });
         }
-        
+    
+        if (!empty($categorySelected)) {
+            $projects->where('category_id', $categorySelected);
+        }
+    
+        $projects = $projects->orderBy('name', 'asc')->get();
+        $hasResults = $projects->isNotEmpty();
+        $categories = Category::orderBy('created_at', 'desc')->get();
+    
+        return view('user.pages.project.search', [
+            'title' => 'Kết quả tìm kiếm',
+            'keyword' => $keyword,
+            'categories' => $categories,
+            'categorySelected' => $categorySelected,
+            'projects' => $projects,
+            'hasResults' => $hasResults,
+        ]);
     }
+    
 
     public function showProjectDetailBySlug(Request $request, $projectSlug)
     {

@@ -18,6 +18,19 @@
                         </svg>
                         <input type="text" name="s" value="{{ $keyword }}" id="keyword" placeholder="Tìm kiếm dự án">
                     </div>
+                    <div class="filter_group relative">
+                        <div class="select">
+                            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                            <select class="custom_sl category_sl select-styled active">
+                                <option value="0" data-rel="0">Danh mục</option>
+                                @foreach ($categories as $category)
+                                <option value="{{ $category->id }}" data-rel="{{ $category->id }}" {{ $category->id == $categorySelected ? 'selected' : '' }}>
+                                    {{ $category->name }}
+                                </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
                 <!-- </form> -->
             </div>
             <div class="show_filter_btn_fixed">
@@ -75,17 +88,19 @@
     </div>
 </section>
 <script>
-    document.getElementById('keyword').addEventListener('change', function() {
-        var keyword = this.value;
-        var url = '/du-an/search?s=' + encodeURIComponent(keyword);
+    function handleSearch() {
+        var keyword = document.getElementById('keyword').value;
+        var selectedCategoryOption = $('.category_sl').find('option:selected');
+        var categoryValue = selectedCategoryOption.data('rel');
+        var url = '/du-an/search?s=' + encodeURIComponent(keyword) + '&cat=' + encodeURIComponent(categoryValue);
         window.location.href = url;
-    });
+    }
+    document.getElementById('keyword').addEventListener('change', handleSearch);
     document.getElementById('keyword').addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
-            var keyword = this.value;
-            var url = '/du-an/search?s=' + encodeURIComponent(keyword);
-            window.location.href = url;
+            handleSearch();
         }
     });
+    $('.category_sl').on('change', handleSearch);
 </script>
 @endsection
