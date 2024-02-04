@@ -3,13 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use App\Models\PageView;
 use App\Models\Post;
 use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Topic;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {

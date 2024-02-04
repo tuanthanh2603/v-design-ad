@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
-use App\Models\Image;
 use App\Models\Post;
 use App\Models\Topic;
 use Illuminate\Http\Request;
