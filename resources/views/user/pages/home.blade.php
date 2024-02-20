@@ -37,7 +37,7 @@
         <div class="flex_box tablet_flex_col">
             <div class="col_4 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                 <h2 class="sec_title text_white">V Design AD</h2>
-                <div class="des fs_20 lh_30 fw400 text_white">V Design AD - kiến tạo nên môi trường sống bền vững cho con người</div>
+                <div class="des fs_20 lh_30 fw400 text_white">V Design AD - Biến ý tưởng thành hiện thực</div>
             </div>
             <div class="col_8 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="fs_15 lh_30 fw300 text_gray">
