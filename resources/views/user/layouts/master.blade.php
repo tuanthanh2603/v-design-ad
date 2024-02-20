@@ -149,7 +149,7 @@
                 <div class="phone-vr">
                     <div class="phone-vr-circle-fill"></div>
                     <div class="phone-vr-img-circle">
-                        <a target="_blank" href="https://zalo.me/0397892603">
+                        <a target="_blank" href="https://zalo.me/0975353597">
                             <img src="{{ asset('static/zalo_icon.png') }}">
                         </a>
                     </div>
@@ -159,7 +159,7 @@
                 <div class="phone-vr">
                     <div class="phone-vr-circle-fill"></div>
                     <div class="phone-vr-img-circle">
-                        <a href="tel:0397892603">
+                        <a href="tel:0975353597">
                             <img src="{{ asset('static/phone_icon.png') }}">
                         </a>
                     </div>

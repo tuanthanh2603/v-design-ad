@@ -36,12 +36,12 @@
     <div class="grid-container">
         <div class="flex_box tablet_flex_col">
             <div class="col_4 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
-                <h2 class="sec_title text_white">VDesignAds</h2>
-                <div class="des fs_20 lh_30 fw400 text_white">VDesignAds - kiến tạo nên môi trường sống bền vững cho con người</div>
+                <h2 class="sec_title text_white">V Design AD</h2>
+                <div class="des fs_20 lh_30 fw400 text_white">V Design AD - kiến tạo nên môi trường sống bền vững cho con người</div>
             </div>
             <div class="col_8 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="fs_15 lh_30 fw300 text_gray">
-                    <p>VDesignAds lựa chọn sứ mệnh phục vụ cộng đồng thông qua những thiết kế quy hoạch, cảnh quan, kiến trúc, nội thất và việc xây dựng các công trình bền vững bởi một đội ngũ cộng sự tài năng và đầy lòng đam mê.</p>
+                    <p>V Design AD lựa chọn sứ mệnh phục vụ cộng đồng thông qua những thiết kế quy hoạch, cảnh quan, kiến trúc, nội thất và việc xây dựng các công trình bền vững bởi một đội ngũ cộng sự tài năng và đầy lòng đam mê.</p>
                     <p>Chúng tôi cam kết kiến tạo những công trình chất lượng, bền vững nhất và giúp cộng đồng nhận ra được những giá trị của chính họ.</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
         <div class="flex_box jus_between al_center tablet_flex_col">
             <div class="col_4 tablet_col_12 tablet_text_center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                 <h2 class="sec_title text_white">DỰ ÁN</h2>
-                <div class="des fs_20 lh_30 fw400 text_white">Các dự án VDesignAds đã thực hiện</div>
+                <div class="des fs_20 lh_30 fw400 text_white">Các dự án V Design AD đã thực hiện</div>
             </div>
             <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                 <div class="terms_menu">
@@ -101,7 +101,7 @@
                 <h2 class="sec_title text_white">
                     DỊCH VỤ </h2>
                 <div class="des fs_20 lh_30 fw400 text_white">
-                    Các dịch vụ được cung cấp bởi V Design </div>
+                    Các dịch vụ được cung cấp bởi V Design AD</div>
             </div>
             <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
                 data-aos-duration="500">

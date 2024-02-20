@@ -1,3 +1,11 @@
+    <style>
+        #centeredDiv {
+            text-align: center; 
+            margin: 0 auto;
+            width: 50%;
+        }
+</style>
+    </style>
     <div class="site-footer">
         <footer class="footer_wrap section">
             <div class="grid-container">
@@ -10,7 +18,7 @@
                         <div class="menu_footer">
                             <ul id="menu-menu-footer" class="m_0 ls_none flex_box al_center tablet_jus_center flex_wrap">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88">
-                                    <a href="{{ url('/gioi-thieu') }}">Về V Design</a>
+                                    <a href="{{ url('/gioi-thieu') }}">Về V Design AD</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87">
                                     <a href="{{ url('/du-an') }}">Dự án</a>
@@ -18,9 +26,9 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90">
                                     <a href="{{ url('dich-vu') }}">Dịch vụ</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
+                                {{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
                                     <a href="{{ url('/san-pham') }}">Sản phẩm</a>
-                                </li>
+                                </li> --}}
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
                                     <a href="{{ url('/xu-huong-thiet-ke') }}">Xu hướng thiết kế</a>
                                 </li>
@@ -41,4 +49,9 @@
                 </div>
             </div>
         </footer>
+        <section style="background: rgba(0, 0, 0, 0.30); padding: 20px">
+            <div id="centeredDiv"><b>Công Ty TNHH V DESIGN AD</b></div>
+            <div id="centeredDiv">Địa chỉ: 10 Đường 11, Phường Bình Thuận, Quận 7, Thành phố Hồ Chí Minh, Việt Nam</div>
+            <div id="centeredDiv"> Mã số thuế: 0317665645 quản lý bởi Chi cục Thuế khu vực Quận 7 - huyện Nhà Bè</div>
+        </section>
     </div>

@@ -2,15 +2,17 @@
     <div class="loading-background"></div>
     <div class="loading-text">
         <span>V</span>
+        <span>&nbsp;</span>
         <span>D</span>
         <span>e</span>
         <span>s</span>
         <span>i</span>
         <span>g</span>
         <span>n</span>
+        <span>&nbsp;</span>
         <span>A</span>
-        <span>d</span>
-        <span>s</span>
+        <span>D</span>
+        
     </div>
 </div>
 
@@ -39,7 +41,7 @@
     }
 
     .loading-text {
-        font-family: 'Cursive', cursive;
+      
         font-size: 60px;
         color: #FFF;
         display: flex;

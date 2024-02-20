@@ -127,7 +127,7 @@
     <img src="{{ asset('static/intro.jpg') }}" alt="">
     <div class="gr_head" style="bottom: 3.49rem">
         <div class="grid-container">
-            <h1>Giới thiệu về V Design</h1>
+            <h1>Giới thiệu về V Design AD</h1>
             <section class="breadcrumbs">
                 <div class="row">
                     <div class="col-xl-12">
@@ -160,14 +160,14 @@
             <div class="col_4 tablet_col_12 tablet_text_center aos-init aos-animate" data-aos="fade-right" data-aos-delay="300"
                 data-aos-duration="500">
                 <img src="{{ asset('static/logo-vdesign.png') }}" alt="">
-                <div style="color: #fff">V Design - Đối Tác Hoàn Hảo Cho Bảng Hiệu Quảng Cáo</div>
+                <div style="color: #fff">V Design AD - Đối Tác Hoàn Hảo Cho Bảng Hiệu Quảng Cáo</div>
             </div>
             <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
                 data-aos-duration="500" style="color:#fff">
 
                 <span >GIỚI THIỆU</span>
-                <h2 style="color: #C5A47E; font-size: 3.3rem;">V Design</h2>
-                <div>Chúng tôi tạo nên những sản phẩm đẳng cấp, kết hợp sự hiện đại, đơn giản thanh lịch và màu sắc sang trọng. Tại V Design, chúng tôi cam kết mang lại chất lượng tốt nhất thông qua dịch vụ thiết kế & thi công trọn gói. Chúng tôi chăm sóc từng công đoạn với sự chỉn chu và tỉ mỉ, biến ý tưởng trên bảng vẽ thành hiện thực với thời gian hợp lý.</div>
+                <h2 style="color: #C5A47E; font-size: 3.3rem;">V Design AD</h2>
+                <div>Chúng tôi tạo nên những sản phẩm đẳng cấp, kết hợp sự hiện đại, đơn giản thanh lịch và màu sắc sang trọng. Tại V Design AD, chúng tôi cam kết mang lại chất lượng tốt nhất thông qua dịch vụ thiết kế & thi công trọn gói. Chúng tôi chăm sóc từng công đoạn với sự chỉnh chu và tỉ mỉ, biến ý tưởng trên bảng vẽ thành hiện thực với thời gian hợp lý.</div>
                 <div class="grid_box grid_3 mobile_grid_3" style="margin-top: 3rem">
                     <div>
                         <div class="icon-intro">
@@ -250,6 +250,7 @@
                     Tư duy học hỏi, trau dồi và sẵn sàng cập nhật xu hướng mới để cải thiện kỹ năng chuyên môn. Tư vấn và giải đáp mọi thắc mắc nhanh chóng và chuyên nghiệp.
                 </div>
             </div>
+           
         </div>
 
     </div>
@@ -262,7 +263,7 @@
                 <h2 class="sec_title text_white">
                     Liên hệ tư vấn </h2>
                 <div class="des fs_20 lh_30 fw400 text_white">
-                    Liên hệ V Design để hiện thực hóa ý tưởng cho thương hiệu của bạn </div>
+                    Liên hệ V Design AD để hiện thực hóa ý tưởng cho thương hiệu của bạn </div>
             </div>
             <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
                 data-aos-duration="500">

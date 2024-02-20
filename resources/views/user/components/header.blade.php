@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }} - {{ config('app.name') }}</title>
     <meta name="description" content="{{ config('app.description') }}" />
+    <meta name="keywords" content="">
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ url()->current() }}" />
     <meta property="og:locale" content="vi_VN" />

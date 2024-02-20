@@ -57,10 +57,10 @@
             <div class="main_menu">
                 <div id="primary-menu" class="main-nav">
                     <ul id="menu-primary-menu-1" class="ls_none m_0  menu sf-menu">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="{{ url('/gioi-thieu') }}">Về V Design</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="{{ url('/gioi-thieu') }}">Về V Design AD</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="{{ url('/du-an') }}">Dự án</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="{{ url('/dich-vu') }}">Dịch vụ</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="{{ url('/san-pham') }}">Sản phẩm</a></li>
+                        {{-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="{{ url('/san-pham') }}">Sản phẩm</a></li> --}}
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="{{ url('/xu-huong-thiet-ke') }}">Xu hướng thiết kế</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="{{ url('/lien-he') }}">Liên hệ</a></li>
                     </ul>
