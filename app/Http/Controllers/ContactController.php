@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactNotification;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+
 
 
 class ContactController extends Controller
@@ -24,6 +26,7 @@ class ContactController extends Controller
 
         if ($contact) {
             Session::flash('success', 'Gửi thông tin liên hệ thành công');
+            
         } else {
             Session::flash('error', 'Có lỗi xảy ra khi gửi liên hệ');
         }

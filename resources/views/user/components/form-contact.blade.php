@@ -10,7 +10,7 @@
             <label for="phone">SỐ ĐIỆN THOẠI</label>
             <input size="40"
                 class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-                id="phone" maxlength="10" value="" type="tel" name="phone" required>
+                id="phone" maxlength="10" minlength="10" value="" type="tel" name="phone" required>
         </div>
 
         <div class="col_12 relative form_group">
