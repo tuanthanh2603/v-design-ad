@@ -1,7 +1,7 @@
 @extends('user.layouts.master')
 @section('bodyClass', 'project-template-default single single-project postid-1449 wp-custom-logo wp-embed-responsive right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover featured-image-active')
 @section('content')
-<div id="banner_gr" class="banner_gr section">
+{{-- <div id="banner_gr" class="banner_gr section">
     <div class="swiper banner_slide">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -19,19 +19,27 @@
             <h1>{{ $project->name }}</h1>
         </div>
     </div>
-</div>
+</div> --}}
 
 <section class="section single_project">
     <div class="grid-container">
         <div class="flex_box flex_wrap mobile_col_reverse">
             <div class="col_8 tablet_col_7 mobile_col_12">
                 <div class="tabs_container">
-                    <ul class="tabs_title m_0 ls_none flex_box al_center">
+                    {{-- <ul class="tabs_title m_0 ls_none flex_box al_center">
                         <li class="fs_16 lh_22 fw300 active" data-id="0">
                             Hình ảnh </li>
-                    </ul>
+                    </ul> --}}
+                    
                     <div class="tabs_content">
                         <div class="tab_content active" id="tab_content0">
+                            <div class="img_wrap">
+                                <img width="1920" height="1080" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201080'%3E%3C/svg%3E" alt="" decoding="async" data-lazy-src="{{ $project->image }}" />
+                                <noscript>
+                                    <img width="1920" height="1080" src="{{ $project->image }}" alt="" decoding="async" />
+                                </noscript>
+                            </div>
+                            <br>
                             <div class="grid_box grid_3 tablet_grid_2">
                                 @foreach($images as $image)
                                 <div class="item relative hover_zoom_img">

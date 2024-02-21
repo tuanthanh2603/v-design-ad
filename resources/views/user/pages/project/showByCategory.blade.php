@@ -3,7 +3,7 @@
 @section('content')
 <section class="section project_page_1">
     <div class="grid-container">
-        <h1 class="sec_title_2">{{ $title }} tại VDesignAds</h1>
+        <h1 class="sec_title_2">{{ $title }} tại V Design AD</h1>
     </div>
 </section>
 <section class="section project_page_2">
