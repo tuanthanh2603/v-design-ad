@@ -46,6 +46,7 @@ class ManageProjectController extends Controller
         $project->image = $request->input('image');
         $project->address = $request->input('address');
         $project->description = $request->input('description');
+        $project->is_featured = $request->has('is_featured');
         $project->save();
 
         if ($project) {
@@ -104,6 +105,7 @@ class ManageProjectController extends Controller
         $project->address = $request->input('address');
         $project->image = $request->input('image');
         $project->category_id = $request->input('category_id');
+        $project->is_featured = $request->has('is_featured');
         $slug = Str::slug($request->input('name'), '-');
         $existingSlug = Project::where('slug', $slug)->where('id', '!=', $id)->first();
         if ($existingSlug) {

@@ -24,6 +24,7 @@
                                         <th class="text-uppercase text-secondary text-xxs">Hình ảnh</th>
                                         <th class="text-uppercase text-secondary text-xxs">Danh mục</th>
                                         <th class="text-uppercase text-secondary text-xxs">Địa chỉ</th>
+                                        <th class="text-uppercase text-secondary text-xxs">Hiển thị trang chủ</th>
                                         <th class="text-uppercase text-secondary text-xxs">Ngày tạo</th>
                                         <th class="text-uppercase text-secondary text-xxs">Ngày cập nhật</th>
                                         <th class="text-secondary opacity-7"></th>
@@ -85,6 +86,19 @@
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm">{{ $project->address }}</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex px-2 py-1">
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">
+                                                    @if ($project->is_featured)
+                                                        <button type="button" class="btn bg-gradient-success btn-sm">Có</button>
+                                                    @else
+                                                        <button type="button" class="btn bg-gradient-danger btn-sm">Không</button>
+                                                    @endif
+                                                    </h6>
                                                 </div>
                                             </div>
                                         </td>
@@ -175,6 +189,14 @@
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                         @endforeach
                                     </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Hiển thị ở trang chủ</label>
+                                <div class="input-group mb-3">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="is_featured" name="is_featured">
+                                    </div>
                                 </div>
                             </div>
                         </div>

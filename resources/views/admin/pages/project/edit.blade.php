@@ -74,6 +74,14 @@
                                     <input type="text" name="address" value="{{ $project->address }}" class="form-control">
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <label>Hiển thị ở trang chủ</label>
+                                <div class="input-group mb-3">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="is_featured" name="is_featured" {{ $project->is_featured ? 'checked' : '' }}>
+                                    </div>
+                                </div>
+                            </div>
                             <input type="hidden" name="albums" id="albums">
                             <hr>
                             <div class="text-center">
