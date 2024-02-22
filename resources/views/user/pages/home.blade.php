@@ -172,38 +172,35 @@
     </style>
     <section class="section home_banner">
         <div class="swiper home_swiper">
-            <div class="swiper-wrapper">
-                @foreach ($projects as $project)
-                    <div class="swiper-slide">
-                        <div class="img_wrap">
-                            {{-- <img width="2560" height="1235" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202560%201235'%3E%3C/svg%3E" class="" alt="" decoding="async" data-lazy-src="{{ $project->image }}" /> --}}
-                            <img width="2560" height="1235" src="{{ $project->image }}" class="lazyloaded" alt=""
-                                decoding="async" sizes="(max-width: 2560px) 100vw, 2560px"
-                                srcset="{{ $project->image }} 2560w, {{ $project->image }} 300w, {{ $project->image }} 1024w, {{ $project->image }} 768w, {{ $project->image }} 1536w, {{ $project->image }} 2048w"
-                                data-ll-status="loaded">
-                            {{-- <noscript>
-                        <img width="2560" height="1235" src="{{ $project->image }}" class="" alt="" decoding="async" />
-                    </noscript> --}}
-                            <noscript><img width="2560" height="1235" src="{{ $project->image }}" class=""
-                                    alt="" decoding="async"
-                                    srcset="{{ $project->image }} 2560w, {{ $project->image }} 300w, {{ $project->image }} 1024w, {{ $project->image }} 768w, {{ $project->image }} 1536w, {{ $project->image }} 2048w"
-                                    sizes="(max-width: 2560px) 100vw, 2560px" /></noscript>
-                        </div>
-                        <a class="wrap_link" href="/du-an/{{ $project->slug }}"
-                            title="{{ mb_strtoupper($project->name, 'UTF-8') }}">{{ mb_strtoupper($project->name, 'UTF-8') }}</a>
-                        <a href="/du-an/{{ $project->slug }}" class="flex_box al_center">
-                            <div class="plus_btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="0.400391" y1="11.6523" x2="23.6001" y2="11.6523" stroke="white" />
-                                    <line x1="12.0527" y1="23.1997" x2="12.0527" y2="2.18557e-08" stroke="white" />
-                                </svg>
-                            </div>
-                            <h3 class="m_0 text_white font_oswald fw300">{{ mb_strtoupper($project->name, 'UTF-8') }}</h3>
-                        </a>
+        <div class="swiper-wrapper">
+            @foreach ($projects_featured as $project_featured)
+                <div class="swiper-slide">
+                    <div class="img_wrap">
+                        <img width="2560" height="1235" src="{{ $project_featured->image }}" class="lazyloaded" alt=""
+                            decoding="async" sizes="(max-width: 2560px) 100vw, 2560px"
+                            srcset="{{ $project_featured->image }} 2560w, {{ $project_featured->image }} 300w, {{ $project_featured->image }} 1024w, {{ $project_featured->image }} 768w, {{ $project_featured->image }} 1536w, {{ $project_featured->image }} 2048w"
+                            data-ll-status="loaded">
+                        <noscript>
+                            <img width="2560" height="1235" src="{{ $project_featured->image }}" class="" alt="" decoding="async"
+                                srcset="{{ $project_featured->image }} 2560w, {{ $project_featured->image }} 300w, {{ $project_featured->image }} 1024w, {{ $project_featured->image }} 768w, {{ $project_featured->image }} 1536w, {{ $project_featured->image }} 2048w"
+                                sizes="(max-width: 2560px) 100vw, 2560px" />
+                        </noscript>
                     </div>
-                @endforeach
-            </div>
+                    <a class="wrap_link" href="/du-an/{{ $project_featured->slug }}"
+                        title="{{ mb_strtoupper($project_featured->name, 'UTF-8') }}">{{ mb_strtoupper($project_featured->name, 'UTF-8') }}</a>
+                    <a href="/du-an/{{ $project_featured->slug }}" class="flex_box al_center">
+                        <div class="plus_btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.400391" y1="11.6523" x2="23.6001" y2="11.6523" stroke="white" />
+                                <line x1="12.0527" y1="23.1997" x2="12.0527" y2="2.18557e-08" stroke="white" />
+                            </svg>
+                        </div>
+                        <h3 class="m_0 text_white font_oswald fw300">{{ mb_strtoupper($project_featured->name, 'UTF-8') }}</h3>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+
         </div>
     </section>
 

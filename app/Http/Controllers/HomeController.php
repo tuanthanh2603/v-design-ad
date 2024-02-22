@@ -13,6 +13,7 @@ class HomeController extends Controller
 {
     public function index(){
         $projects = Project::orderBy('id')->take(6)->get();
+        $projects_featured = Project::where('is_featured', true)->get();
         $categories = Category::orderBy('id', 'desc')->take(2)->get();
         $products = Product::orderBy('created_at', 'desc')->take(6)->get();
         $topics = Topic::orderBy('created_at', 'desc')->take(4)->get();
@@ -22,6 +23,7 @@ class HomeController extends Controller
         return view('user.pages.home', [
             'title' => 'Trang chủ',
             'projects' => $projects,
+            'projects_featured' => $projects_featured,
             'categories' => $categories,
             'products' => $products,
             'topics' => $topics,
