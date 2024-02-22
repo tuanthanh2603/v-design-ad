@@ -11,7 +11,7 @@
         .num svg{
             font-weight: 900;
             line-height: 1;
-            
+
         }
         div#banner_gr {
             text-align: center;
@@ -148,6 +148,27 @@
         .icon-intro:hover svg {
             transform: rotate(360deg);
         }
+        .btn_contact_home{
+            display: inline-flex;
+            height: 2.604rem;
+            align-items: center;
+            min-width: 10.417rem;
+            font-size: 0.729rem;
+            font-weight: 500 !important;
+            line-height: 1.458rem;
+            color: #fff;
+            border: 1px solid #fff;
+            justify-content: center;
+            cursor: pointer;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .btn_contact_home:hover{
+            background-color: #C5A47E
+        }
     </style>
     <section class="section home_banner">
         <div class="swiper home_swiper">
@@ -211,7 +232,7 @@
                             data-aos-duration="500"
                             style="border: 1px solid #C5A47E; background: #000; padding: 2.604rem; ">
                             <div class="title-info-page">
-                                <div class="num"> 
+                                <div class="num">
                                     <i class="fa fa-users"></i>
                                  </div>
                                 <h3> TƯ VẤN BẢNG HIỆU</h3>
@@ -225,8 +246,8 @@
                             data-aos-duration="500"
                             style="border: 1px solid #C5A47E; background: #000; padding: 2.604rem; ">
                             <div class="title-info-page">
-                                <div class="num"> 
-                                    <i class="fa fa-cube"></i> 
+                                <div class="num">
+                                    <i class="fa fa-cube"></i>
                                 </div>
                                 <h3> BÁO GIÁ BẢNG HIỆU</h3>
                             </div>
@@ -240,10 +261,10 @@
                             data-aos-duration="500"
                             style="border: 1px solid #C5A47E; background: #000; padding: 2.604rem; ">
                             <div class="title-info-page">
-                                <div class="num"> 
+                                <div class="num">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
-                                      </svg>   
+                                      </svg>
                                 </div>
                                 <h3> THI CÔNG BẢNG HIỆU</h3>
                             </div>
@@ -260,7 +281,7 @@
             <div class="flex_box jus_between al_center tablet_flex_col">
                 <div class="col_4 tablet_col_12 tablet_text_center" data-aos="fade-right" data-aos-delay="300"
                     data-aos-duration="500">
-                    <h2 class="sec_title text_white">DỰ ÁN</h2>
+                    <h2 class="sec_title text_white">DỰ ÁN TIÊU BIỂU</h2>
                     <div class="des fs_20 lh_30 fw400 text_white">Các dự án V Design AD đã thực hiện</div>
                 </div>
                 <div class="col_7 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
@@ -344,6 +365,61 @@
                     </div>
                 </div>
             </div>
+            <section class="section post_text_img">
+                <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+
+                    <div class="flex_box al_start tablet_col_reverse">
+                        <div class="col_6 tablet_col_12">
+                            <div class="img_wrap">
+                                <img width="573" height="379"
+                                    src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class="lazyloaded"
+                                    alt="" decoding="async" data-ll-status="loaded"><noscript><img width="573" height="379"
+                                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class=""
+                                        alt="" decoding="async" /></noscript>
+                            </div>
+                        </div>
+                        <div class="col_6 tablet_col_12" >
+                            <div class="content_post" >
+                                <h2 class="box_title" style=" color: #C5A47E;">
+                                    THIẾT KẾ BẢNG HIỆU
+                                </h2>
+                                <p style="color: #FFF">Tư vấn và thiết kế bảng hiệu dựa trên yêu cầu và mục tiêu quảng cáo của khách hàng.</p>
+                                <div class="text_center">
+                                    <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
+                                        Liên hệ tư vấn                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+                    <h2 class="box_title" style="text-align: center; color: #C5A47E;">
+                        THIẾT KẾ BẢNG HIỆU
+                    </h2>
+                    <div class="flex_box al_start tablet_col_reverse">
+                        <div class="col_6 tablet_col_12">
+                            <div class="content_post">
+                                <p style="color: #FFF">Tư vấn và thiết kế bảng hiệu dựa trên yêu cầu và mục tiêu quảng cáo của khách hàng.</p>
+                                <div class="text_center">
+                                    <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
+                                        Liên hệ tư vấn                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_6 tablet_col_12">
+                            <div class="img_wrap">
+                                <img width="573" height="379"
+                                    src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class="lazyloaded"
+                                    alt="" decoding="async" data-ll-status="loaded"><noscript><img width="573" height="379"
+                                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class=""
+                                        alt="" decoding="async" /></noscript>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
             <div class="grid_box grid_3 mobile_grid_1">
                 @foreach ($services as $index => $service)
                     @php

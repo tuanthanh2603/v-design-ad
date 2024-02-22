@@ -3,7 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }} - {{ config('app.name') }}</title>
     <meta name="description" content="{{ config('app.description') }}" />
-    <meta name="keywords" content="">
+
+    <meta name="keywords" content="thi công bảng hiệu, quảng cáo ngoài trời, thiết kế bảng hiệu, bảng hiệu LED, bảng hiệu alu, in bảng hiệu,
+    công ty quảng cáo, bảng hiệu đẹp, bảng hiệu chữ nổi, thi công biển quảng cáo, bảng hiệu gắn tường, bảng hiệu đèn neon, dịch vụ quảng cáo,
+    bảng hiệu công ty, in ấn quảng cáo, công ty in ấn, quảng cáo ngoại ô, bảng hiệu alu, bảng hiệu phòng trưng bày, bảng hiệu chất lượng cao, bảng hiệu,
+    vdesign, vdesignad, bảng hiệu bình tân, bảng hiệu hồ chí minh, bảng hiệu sài gòn,">
+
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ url()->current() }}" />
     <meta property="og:locale" content="vi_VN" />
