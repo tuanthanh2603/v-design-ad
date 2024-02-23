@@ -213,11 +213,8 @@
                 </div>
                 <div class="col_8 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
                     <div class="fs_15 lh_30 fw300 text_gray">
-                        <p>V Design AD lựa chọn sứ mệnh phục vụ cộng đồng thông qua những thiết kế quy hoạch, cảnh quan,
-                            kiến trúc, nội thất và việc xây dựng các công trình bền vững bởi một đội ngũ cộng sự tài năng và
-                            đầy lòng đam mê.</p>
-                        <p>Chúng tôi cam kết kiến tạo những công trình chất lượng, bền vững nhất và giúp cộng đồng nhận ra
-                            được những giá trị của chính họ.</p>
+                        <p>V Design AD cam kết phục vụ cộng đồng thông qua việc tạo ra những bảng hiệu quảng cáo độc đáo và chất lượng. Chúng tôi kết hợp sự sáng tạo trong thiết kế với kỹ thuật thi công chuyên nghiệp để mang đến những giải pháp quảng cáo đáng tin cậy và ấn tượng cho khách hàng. Đội ngũ nhân viên tài năng và đam mê của chúng tôi luôn sẵn lòng làm việc hết mình để đáp ứng mọi yêu cầu và mang lại sự hài lòng tối đa cho quý khách hàng.</p>
+
                     </div>
                 </div>
             </div>
@@ -310,10 +307,43 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+
+    </section>
+    <section class="section about_menu" >
+        <div class="menu_about">
+            <ul id="menu-menu-media" class="m_0 flex_box al_center ls_none">
+                @foreach ($categories_2 as $key => $categories)
+                    @if ($key < 6)
+                        <li id="menu-item-{{$key}}" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{$key}}">
+                            <a href="/danh-muc/{{ $categories->slug }}">{{ $categories->name }}</a>
+                        </li>
+                    @endif
+                @endforeach
+            </ul>
+
+            @if (count($categories_2) > 6)
+                <ul id="menu-menu-media" class="m_0 flex_box al_center ls_none">
+                    @foreach ($categories_2 as $key => $categories)
+                        @if ($key >= 6)
+                            <li id="menu-item-{{$key}}" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{$key}}">
+                                <a href="/danh-muc/{{ $categories->slug }}">{{ $categories->name }}</a>
+                            </li>
+                            <li id="menu-item-{{$key}}" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-{{$key}}">
+                                <a href="{{ url('/du-an') }}">Xem tất cả dự án</a>
+                            </li>
+                        @endif
+                    @endforeach
+                </ul>
+            @endif
+
         </div>
     </section>
 
-    <section class="section home_2">
+
+
+    <section class="section home_2" >
         <div data-bg="{{ isset($projects[0]) ? $projects[0]->image : '' }}"
             class="box_project_home bg_cus rocket-lazyload" data-aos="fade-up" data-aos-delay="300"
             data-aos-duration="500">
@@ -331,124 +361,100 @@
     </section>
 
     <section class="section home_3 bg_cus rocket-lazyload lazyloaded"
-        style="background-image: url(&quot;{{ asset('assets/images/slide-1-1-1.jpeg') }}&quot;);"
-        data-ll-status="loaded">
-        <div class="grid-container">
-            <div class="flex_box jus_between al_center tablet_flex_col">
-                <div class="col_4 tablet_col_12 tablet_text_center aos-init aos-animate" data-aos="fade-right"
-                    data-aos-delay="300" data-aos-duration="500">
-                    <h2 class="sec_title text_white">
-                        DỊCH VỤ </h2>
-                    <div class="des fs_20 lh_30 fw400 text_white">
-                        Các dịch vụ được cung cấp bởi V Design AD</div>
-                </div>
-                <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
-                    data-aos-duration="500">
-                    <div class="terms_menu">
-                        <ul class="ls_none m_0 flex_box al_center jus_end tablet_jus_center">
+                        style="background-image: url(&quot;{{ asset('assets/images/slide-1-1-1.jpeg') }}&quot;);"
+                        data-ll-status="loaded">
+                        <div class="grid-container">
+                            <div class="flex_box jus_between al_center tablet_flex_col">
+                                <div class="col_4 tablet_col_12 tablet_text_center aos-init aos-animate" data-aos="fade-right"
+                                    data-aos-delay="300" data-aos-duration="500">
+                                    <h2 class="sec_title text_white">
+                                        DỊCH VỤ </h2>
+                                    <div class="des fs_20 lh_30 fw400 text_white">
+                                        Các dịch vụ được cung cấp bởi V Design AD</div>
+                                </div>
+                                <div class="col_7 tablet_col_12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
+                                    data-aos-duration="500">
+                                    <div class="terms_menu">
+                                        <ul class="ls_none m_0 flex_box al_center jus_end tablet_jus_center">
 
-                            <li>
-                                <a class="flex_box al_center" href="{{ url('/dich-vu') }}" target="">
-                                    <svg width="0" height="1" viewBox="0 0 35 1" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <line x1="35" y1="0.5" x2="-4.37114e-08" y2="0.499997"
-                                            stroke="#FFF"></line>
-                                    </svg>
-                                    <span class="fs_14 lh_28 fw500 text_white">
-                                        TẤT CẢ DỊCH VỤ </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <section class="section post_text_img">
-                <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-
-                    <div class="flex_box al_start tablet_col_reverse">
-                        <div class="col_6 tablet_col_12">
-                            <div class="img_wrap">
-                                <img width="573" height="379"
-                                    src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class="lazyloaded"
-                                    alt="" decoding="async" data-ll-status="loaded"><noscript><img width="573" height="379"
-                                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class=""
-                                        alt="" decoding="async" /></noscript>
+                                            <li>
+                                                <a class="flex_box al_center" href="{{ url('/dich-vu') }}" target="">
+                                                    <svg width="0" height="1" viewBox="0 0 35 1" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <line x1="35" y1="0.5" x2="-4.37114e-08" y2="0.499997"
+                                                            stroke="#FFF"></line>
+                                                    </svg>
+                                                    <span class="fs_14 lh_28 fw500 text_white">
+                                                        TẤT CẢ DỊCH VỤ </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col_6 tablet_col_12" >
-                            <div class="content_post" >
-                                <h2 class="box_title" style=" color: #C5A47E;">
-                                    THIẾT KẾ BẢNG HIỆU
-                                </h2>
-                                <p style="color: #FFF">Tư vấn và thiết kế bảng hiệu dựa trên yêu cầu và mục tiêu quảng cáo của khách hàng.</p>
-                                <div class="text_center">
-                                    <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
-                                        Liên hệ tư vấn                    </div>
+                            <section class="section post_text_img">
+                                @foreach ($services_2 as $key => $service)
+                    @if ($key % 2 == 0)
+
+                        <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" style="margin-bottom: 5rem;">
+                            <h2 class="box_title" style="text-align: center; color: #C5A47E; ">
+                                {{ $service->name }}
+                            </h2>
+                            <div class="flex_box al_start tablet_col_reverse" >
+                                <div class="col_6 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                                    <div class="img_wrap">
+                                        <img width="573" height="379" src="{{ $service->image }}" class="lazyloaded" alt="" decoding="async" data-ll-status="loaded">
+                                        <noscript>
+                                            <img width="573" height="379" src="{{ $service->image }}" class="" alt="" decoding="async">
+                                        </noscript>
+                                    </div>
+                                </div>
+                                <div class="col_6 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+                                    <div class="content_post" >
+                                        <p style="color: #FFF">{{ $service->description }}</p>
+                                        <div class="text_center">
+                                            <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
+                                                Liên hệ tư vấn
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-                    <h2 class="box_title" style="text-align: center; color: #C5A47E;">
-                        THIẾT KẾ BẢNG HIỆU
-                    </h2>
-                    <div class="flex_box al_start tablet_col_reverse">
-                        <div class="col_6 tablet_col_12">
-                            <div class="content_post">
-                                <p style="color: #FFF">Tư vấn và thiết kế bảng hiệu dựa trên yêu cầu và mục tiêu quảng cáo của khách hàng.</p>
-                                <div class="text_center">
-                                    <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
-                                        Liên hệ tư vấn                    </div>
+                    @else
+
+                        <div class="grid-container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" style="margin-bottom: 5rem;">
+                            <h2 class="box_title" style="text-align: center; color: #C5A47E; ">
+                                {{ $service->name }}
+                            </h2>
+                            <div class="flex_box al_start tablet_col_reverse">
+                                <div class="col_6 tablet_col_12" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
+                                    <div class="content_post" >
+                                        <p style="color: #FFF">{{ $service->description }}</p>
+                                        <div class="text_center">
+                                            <div class="load_more_projects btn_contact_home" onclick="window.location.href='{{ url('/lien-he') }}'">
+                                                Liên hệ tư vấn
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_6 tablet_col_12" data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">
+                                    <div class="img_wrap">
+                                        <img width="573" height="379" src="{{ $service->image }}" class="lazyloaded" alt="" decoding="async" data-ll-status="loaded">
+                                        <noscript>
+                                            <img width="573" height="379" src="{{ $service->image }}" class="" alt="" decoding="async">
+                                        </noscript>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col_6 tablet_col_12">
-                            <div class="img_wrap">
-                                <img width="573" height="379"
-                                    src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class="lazyloaded"
-                                    alt="" decoding="async" data-ll-status="loaded"><noscript><img width="573" height="379"
-                                        src="https://sarchitects.com.vn/wp-content/uploads/2023/07/23A01015-02-1.jpg" class=""
-                                        alt="" decoding="async" /></noscript>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-            <div class="grid_box grid_3 mobile_grid_1">
-                @foreach ($services as $index => $service)
-                    @php
-                        $animationDelay = 300 + $index * 200;
-                    @endphp
-                    <div class="post_item relative hover_zoom_img aos-init aos-animate" data-aos="fade-up"
-                        data-aos-delay="{{ $animationDelay }}" data-aos-duration="500">
-                        <a href="{{ url('/dich-vu') }}" class="wrap_link"></a>
-                        <div class="img_wrap">
-                            <img width="840" height="511" src="{{ $service->image }}"
-                                class="hover_zoom lazyloaded" alt="" decoding="async"
-                                data-ll-status="loaded"><noscript><img width="840" height="511"
-                                    src="{{ $service->image }}" class="hover_zoom" alt=""
-                                    decoding="async" /></noscript>
-                        </div>
-                        <div class="cont_wrap">
-                            <div class="date_cat flex_box al_center">
-                                <a href="{{ url('/dich-vu') }}"></a>
-                                <div class="date">
-                                    {{ $service->created_at->format('d/m/Y') }} </div>
-                            </div>
-                            <h3 class="font_oswald fw300 limit_line ts_04 limit_2 text_uppercase">{{ $service->name }}
-                            </h3>
-                        </div>
-                    </div>
+                    @endif
                 @endforeach
-
-
-            </div>
 
         </div>
     </section>
+
+
     <section data-bg="/assets/images/slide-1-1-1.jpeg" class="section home_3 bg_cus rocket-lazyload">
         <div class="grid-container">
             <div class="flex_box jus_between al_center tablet_flex_col">
@@ -471,7 +477,7 @@
                                         <span class="fs_14 lh_28 fw500 text_white">{{ mb_strtoupper($topic->name, 'UTF-8') }}</span>
                                     </a>
                                 </li>
-    @endforeach
+                                @endforeach
                             </ul>
                         </div>
                     </div> -->
@@ -501,6 +507,38 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section data-bg="/assets/images/slide-1-1-1.jpeg" class="section home_3 bg_cus rocket-lazyload">
+        <div class="grid-container">
+            <div class="flex_box jus_between al_center tablet_flex_col">
+                <div class=" tablet_col_12 tablet_text_center" data-aos="fade-right" data-aos-delay="300"
+                    data-aos-duration="500">
+                    <h2 class="sec_title text_white" style="font-size: 3rem">
+                        LÝ DO BẠN NÊN CHỌN V DESIGN AD </h2>
+                </div>
+            </div>
+            <div class=" recruit_content flex_box mobile_col_12" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="500">
+                <div class="col_6" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="500">
+                    <ul style="color: #FFF;">
+                        <li style="padding: 1rem">Đội ngũ nhân viên thiết kế chuyên nghiệp</li>
+                        <li style="padding: 1rem">Xưởng sản xuất đa năng đáp ứng tốt nhất yêu cầu của quý khách</li>
+                        <li style="padding: 1rem">Phong cách làm việc chuyên nghiệp và nhanh nhẹn, đơn giản</li>
+                        <li style="padding: 1rem">Giá thành cạnh tranh và rẻ nhất</li>
+                        <li style="padding: 1rem">Giao hàng tận nơi cho khách hàng</li>
+                    </ul>
+                </div>
+                <div class="col_6" data-aos="fade-left" data-aos-delay="300"  data-aos-duration="500">
+                    <ul style="color: #FFF;">
+                        <li style="padding: 1rem">Chiết khấu cao cho người đặt hàng</li>
+                        <li style="padding: 1rem">Thời gian sản xuất cũng như thi công nhanh</li>
+                        <li style="padding: 1rem">Đến tận nơi tư vấn và ký hợp đồng</li>
+                        <li style="padding: 1rem">Hình thức đặt hàng - thanh toán đơn giản</li>
+                        <li style="padding: 1rem">Luôn luôn lắng nghe - luôn luôn thấu hiểu</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

@@ -1,9 +1,14 @@
     <style>
         #centeredDiv {
-            text-align: center; 
+            text-align: center;
             margin: 0 auto;
             width: 50%;
         }
+        @media only screen and (max-width: 768px) {
+            #centeredDiv {
+                width: 100%;
+        }
+}
 </style>
     </style>
     <div class="site-footer">
@@ -51,7 +56,9 @@
         </footer>
         <section style="background: rgba(0, 0, 0, 0.30); padding: 20px">
             <div id="centeredDiv"><b>Công Ty TNHH V DESIGN AD</b></div>
-            <div id="centeredDiv">Địa chỉ: 10 Đường 11, Phường Bình Thuận, Quận 7, Thành phố Hồ Chí Minh, Việt Nam</div>
+            <div id="centeredDiv">Địa chỉ DKKD: 10 Đường 11, Phường Bình Thuận, Quận 7, Thành phố Hồ Chí Minh</div>
+            <div id="centeredDiv">Chi nhánh 1: 40/31 Miếu Gò Xoài, Bình Hưng Hoà A, Quận Bình Tân, Thành phố Hồ Chí Minh</div>
+            <div id="centeredDiv">Chi nhánh 2: Km72, Xã Eanam, Huyện Eah'leo, Tỉnh Đăk Lăk </div>
             <div id="centeredDiv"> Mã số thuế: 0317665645 quản lý bởi Chi cục Thuế khu vực Quận 7 - huyện Nhà Bè</div>
         </section>
     </div>

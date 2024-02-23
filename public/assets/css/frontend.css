@@ -1460,6 +1460,7 @@ section.about_us .col_5 .content .item:not(:last-child){
 }
 section.about_menu{
     padding-left: 4.948rem;
+    background-color: #fff;
 }
 section.about_menu ul > li{
     width: 100%;
@@ -1779,6 +1780,7 @@ section.home_1 .sec_title{
 }
 section.home_2{
     padding-left: 4.948rem;
+    padding-top: 3rem;
     background: #171717;
 }
 section.home_2 .grid_box{
@@ -2058,13 +2060,14 @@ body.single-post .content_post h5{
     font-weight: 400;
     font-size: 1.458rem;
     line-height: 1.979rem;
+
 }
 section.post_text_img .col_6:first-child{
     padding-left: 6.25rem;
 }
 section.post_text_img .col_6:last-child{
     padding-left: 2.604rem;
-   
+
 }
 section.related_post .sec_title_3{
     margin-bottom: 1.5625rem;

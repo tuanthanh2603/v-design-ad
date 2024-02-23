@@ -19,6 +19,8 @@ class HomeController extends Controller
         $topics = Topic::orderBy('created_at', 'desc')->take(4)->get();
         $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
         $services = Service::orderBy('id')->take(3)->get();
+        $services_2 = Service::orderBy('id')->get();
+        $categories_2 = Category::orderBy('id', 'desc')->get();
 
         return view('user.pages.home', [
             'title' => 'Trang chủ',
@@ -29,6 +31,8 @@ class HomeController extends Controller
             'topics' => $topics,
             'posts' => $posts,
             'services' => $services,
+            'services_2' => $services_2,
+            'categories_2' => $categories_2,
 
         ]);
     }

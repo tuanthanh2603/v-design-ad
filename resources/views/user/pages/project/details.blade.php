@@ -30,7 +30,7 @@
                         <li class="fs_16 lh_22 fw300 active" data-id="0">
                             Hình ảnh </li>
                     </ul> --}}
-                    
+
                     <div class="tabs_content">
                         <div class="tab_content active" id="tab_content0">
                             <div class="img_wrap">
@@ -67,7 +67,7 @@
             <div class="col_4 tablet_col_5 mobile_col_12">
                 <div class="fs_16 lh_22 fw300 text_3">
                     Thông tin dự án </div>
-                <h2 class="sec_title_3">{{ $project->category->name }}</h2>
+                <h2 class="sec_title_3">{{ $project->name }}</h2>
                 <ul class="ls_none m_0">
                     <li class="flex_box al_center">
                         <span class="fs_14 lh_22 fw400">Dòng sản phẩm</span>
